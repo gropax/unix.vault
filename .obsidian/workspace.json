@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "locations/items/run-current-system.md",
-                "mode": "preview",
+                "file": "locations/draft.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "run-current-system"
+              "title": "draft"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 542
   },
   "right": {
     "id": "3dd78bf37d04c70c",
@@ -182,24 +182,25 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
-    "locations/items/run-current-system.md~",
-    "locations/items/run.md",
+    "locations/template.md",
+    "locations/draft.md",
     "locations/items/run-current-system.md",
+    "locations/items/run.md",
+    "locations/template.md~",
+    "locations/4913",
+    "concepts/draft.md",
+    "locations/items/run.md~",
+    "locations/schema.toml~",
+    "locations/schema.toml",
+    "locations/template.toml",
+    "locations/items/run-current-system.md~",
     "locations/items/4913",
     "concepts/items/run-current-system.md~",
     "concepts/items/4913",
-    "concepts/items/run.md~",
     "commands/draft.md",
-    "dir-structs/draft.md~",
-    "concepts/draft.md",
-    "locations/draft.md~",
     "dir-structs/draft.md",
     "locations/draft.md.md",
-    "locations/draft.md",
     "commands/draft.md.md",
-    "dir-structs/items",
-    "dir-structs",
-    "locations/draft.md.md~",
     "concepts/draft.md.md",
     "concepts/Réseaux.md",
     "test.md",

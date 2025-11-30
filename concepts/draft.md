@@ -29,4 +29,5 @@
 - [[Nix shell]]
     - [[Nix shell environment]]
 - [[Nix derivation]] (`.drv`)
+- [[Nix overlay]]
 

@@ -1,0 +1,22 @@
+name = "location"
+
+[fields.path]
+type = "String"
+
+[fields.partOf]
+type = "String"
+
+[fields.dirType]
+type = "String"
+optional = true
+
+#[fields.isPathSymlink]
+#type = "Bool"
+#optional = true
+
+[fields.topic]
+type = "String"
+optional = true
+
+[fields.description]
+type = "String"

@@ -1,6 +1,9 @@
 ---
-path: /run
-partOf: "NixOS"
+path: /run/current-system
+partOf: NixOS
+dirType: system profile
+isPathSymlink: true
+topic: Profiles
 description: ""
 ---
 ```dataviewjs
