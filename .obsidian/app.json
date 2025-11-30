@@ -3,5 +3,7 @@
   "attachmentFolderPath": "assets",
   "promptDelete": false,
   "useTab": false,
-  "tabSize": 4
+  "tabSize": 4,
+  "propertiesInDocument": "hidden",
+  "showInlineTitle": false
 }

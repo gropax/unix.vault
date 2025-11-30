@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8580a22b5725b43e",
+        "id": "f3aa5186079c28e0",
         "type": "tabs",
         "children": [
           {
-            "id": "f72062d84a814c4b",
+            "id": "b2e9befa88055067",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "locations/items/run-current-system.md",
+                "mode": "preview",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "run-current-system"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "3dd78bf37d04c70c",
@@ -176,16 +180,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "42e3fe56a4afc1dc",
+  "active": "b2e9befa88055067",
   "lastOpenFiles": [
-    "Untitled.md",
+    "locations/items/run-current-system.md~",
+    "locations/items/run.md",
+    "locations/items/run-current-system.md",
+    "concepts/items/run-current-system.md~",
+    "concepts/items/4913",
+    "concepts/items/run.md~",
+    "commands/draft.md",
+    "dir-structs/draft.md~",
+    "concepts/draft.md",
+    "locations/draft.md~",
+    "dir-structs/draft.md",
+    "locations/draft.md.md",
+    "locations/draft.md",
+    "commands/draft.md.md",
+    "dir-structs/items",
+    "dir-structs",
+    "locations/draft.md.md~",
+    "concepts/draft.md.md",
+    "concepts/draft.md.md~",
+    "locations/4913",
+    "concepts/Réseaux.md",
+    "test.md",
+    "tools/items/yt-dlp.md",
     "auie.md",
     "assets/png/file-20251126154642514.png",
-    "assets/png",
-    "assets",
     "Untitled 1.md",
     "auie.md",
-    "auie.md",
-    "obsidian.vimrc"
+    "auie.md"
   ]
 }
