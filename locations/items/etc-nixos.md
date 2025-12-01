@@ -2,7 +2,6 @@
 path: /etc/nixos
 type: directory
 partOf: NixOS
-description: ""
 ---
 ```dataviewjs
 const desc = dv.current().description ?? "";

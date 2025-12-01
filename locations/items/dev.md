@@ -1,6 +1,6 @@
 ---
-path: /etc/nixos/configuration.nix
-type: file
+path: /dev
+type: directory
 partOf: NixOS
 ---
 ```dataviewjs

@@ -13,49 +13,68 @@
 
 ##### Global
 Hiérarchique:
-- `/run`
-    - `/run/current-system` -> `/nix/store/…nixos-system…`
-    - `/run/booted-system` -> `/nix/store/…nixos-system…`
-    - `/run/wrappers`
-    - `/run/user/<UID>`
-    - `/run/systemd`
-    - `/run/opengl-driver`
-    - `/run/credentials`
-    - `/run/tmpfiles.d`
-    - `/run/log`
-    - `/run/dbus`
-    - `/run/keys`
-- `/nix`
-    - `/nix/path`
-        - `/nix/var`
-            - `/nix/var/nix`
-                - `/nix/var/nix/profiles`
-                    - `/nix/var/nix/profiles/default`
-                    - `/nix/var/nix/profiles/per-user/<USER>`
-                    - `/nix/var/nix/profiles/system`
-                    - `/nix/var/nix/profiles/system-<NB>-link`
-                - `/nix/var/nix/gcroots/`
-                - `/nix/var/nix/db/`
-                - `/nix/var/nix/daemon-socket/`
-- `/etc`
-    - `/etc/nixos`
-        - `/etc/nixos/configuration.nix`
+- [ ] `/`
+- [x] `/bin`
+- [x] `/boot`
+- [x] `/dev`
+- [x] `/home`
+- [x] `/lib64`
+- [x] `/lost+found`
+- [x] `/proc`
+- [x] `/root`
+- [x] `/srv`
+- [x] `/sys`
+- [x] `/tmp`
+- [x] `/usr`
+- [x] `/var`
+- [ ] `/run`
+    - [x] `/run/current-system` -> `/nix/store/…nixos-system…`
+    - [x] `/run/booted-system` -> `/nix/store/…nixos-system…`
+    - [x] `/run/wrappers`
+    - [ ] `/run/user/<UID>`
+    - [x] `/run/systemd`
+    - [ ] `/run/opengl-driver`
+    - [ ] `/run/credentials`
+    - [ ] `/run/tmpfiles.d`
+    - [ ] `/run/log`
+    - [ ] `/run/dbus`
+    - [ ] `/run/keys`
+- [ ] `/nix`
+    - [ ] `/nix/store`
+    - [x] `/nix/var`
+        - [x] `/nix/var/nix`
+            - [x] `/nix/var/nix/profiles`
+                - [x] `/nix/var/nix/profiles/default`
+                - [x] `/nix/var/nix/profiles/per-user/<USER>`
+                    - [ ] `/nix/var/nix/profiles/per-user/root/channels`
+                    - [ ] `/nix/var/nix/profiles/per-user/root/channels-<genid>-link`
+                - [x] `/nix/var/nix/profiles/system`
+                - [x] `/nix/var/nix/profiles/system-<NB>-link`
+            - [x] `/nix/var/nix/gcroots/`
+            - [x] `/nix/var/nix/db/`
+            - [x] `/nix/var/nix/daemon-socket/`
+            - [ ] `/nix/var/nix/temproots`
+            - [ ] `/nix/var/nix/userpool`
+        - [ ] `/nix/var/log/nix/drvs`
+- [ ] `/etc`
+    - [x] `/etc/nixos`
+        - [x] `/etc/nixos/configuration.nix`
 
 Thématique:
-- Profils :
-    - `~/.nix-profile`
-    - `/nix/var/nix/profiles/default`
-    - `/nix/var/nix/profiles/per-user/<USER>`
-    - `/nix/profile` (not on mine)
-    - `/etc/profiles/per-user` (not on mine)
+- [ ] Profils :
+    - [ ] `~/.nix-profile`
+    - [x] `/nix/var/nix/profiles/default`
+    - [x] `/nix/var/nix/profiles/per-user/<USER>`
+    - [ ] `/nix/profile` (not on mine)
+    - [ ] `/etc/profiles/per-user` (not on mine)
 
 ##### System profile
-- `./sw`
-    - `./sw/bin`
-- `./etc`
-- `./kernel`
-- `./systemd`
-- `./bin`
-- `./sbin`
-- `./lib`
-- `./include`
+- [ ] `./sw`
+    - [x] `./sw/bin`
+- [ ] `./etc`
+- [ ] `./kernel`
+- [ ] `./systemd`
+- [ ] `./bin`
+- [ ] `./sbin`
+- [ ] `./lib`
+- [ ] `./include`
