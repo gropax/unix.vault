@@ -39,8 +39,8 @@ Hiérarchique:
     - [ ] `/run/log`
     - [ ] `/run/dbus`
     - [ ] `/run/keys`
-- [ ] `/nix`
-    - [ ] `/nix/store`
+- [x] `/nix`
+    - [x] `/nix/store`
     - [x] `/nix/var`
         - [x] `/nix/var/nix`
             - [x] `/nix/var/nix/profiles`
@@ -56,7 +56,7 @@ Hiérarchique:
             - [ ] `/nix/var/nix/temproots`
             - [ ] `/nix/var/nix/userpool`
         - [ ] `/nix/var/log/nix/drvs`
-- [ ] `/etc`
+- [x] `/etc`
     - [x] `/etc/nixos`
         - [x] `/etc/nixos/configuration.nix`
 
