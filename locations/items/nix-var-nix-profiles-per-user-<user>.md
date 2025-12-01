@@ -2,7 +2,8 @@
 path: /nix/var/nix/profiles/per-user/<user>
 partOf: NixOS
 dirType: system profile
-topic: Profiles
+topics:
+- Profiles
 description: ""
 ---
 ```dataviewjs

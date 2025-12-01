@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "locations/draft.md",
-                "mode": "source",
+                "file": "locations/items/nix-var-nix-gcroots.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "draft"
+              "title": "nix-var-nix-gcroots"
             }
           }
         ]
@@ -202,6 +202,12 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
+    "locations/items/nix-var-nix-profiles.md~",
+    "locations/items/nix-var-nix-profiles-system-<genid>-link.md~",
+    "locations/items/nix-var-nix-profiles-per-user-<user>.md~",
+    "locations/items/nix-var-nix-profiles-default.md~",
+    "locations/schema.toml~",
+    "locations/draft.md",
     "locations/items/run-wrappers.md",
     "locations/items/run-booted-system.md",
     "locations/items/run-current-system.md",
@@ -224,20 +230,14 @@
     "locations/items/etc.md",
     "locations/items/nix-var-nix-daemon-socket.md",
     "locations/items/etc-nixos.md",
-    "locations/draft.md",
     "locations/items 1/run.md",
     "locations/items 1/run-wrappers.md",
-    "locations/items 1/run-current-system.md",
     "locations/items 1",
     "locations/items/nix-var-nix-profiles-system.md~",
     "locations/items/run.md~",
     "locations/items/4913",
     "locations/template.md~",
     "locations/items/-nix",
-    "locations/items/-nix/var/nix",
-    "locations/items/-nix/var",
-    "locations/4913",
-    "locations/schema.toml~",
     "assets/png/file-20251126154642514.png"
   ]
 }

@@ -10,12 +10,13 @@ type = "String"
 type = "String"
 optional = true
 
-#[fields.isPathSymlink]
-#type = "Bool"
-#optional = true
+[fields.isPathSymlink]
+type = "Bool"
+optional = true
 
-[fields.topic]
+[fields.topics]
 type = "String"
+multiplicity = "Many"
 optional = true
 
 [fields.description]

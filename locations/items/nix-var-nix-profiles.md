@@ -1,7 +1,8 @@
 ---
 path: /nix/var/nix/profiles
 partOf: NixOS
-topic: Profiles
+topics:
+- Profiles
 description: ""
 ---
 ```dataviewjs
