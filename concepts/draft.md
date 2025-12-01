@@ -42,6 +42,3 @@
 
 ###### Home Manager
 - [[Home Manager]]
-
-
-![[which ping#^command]]
