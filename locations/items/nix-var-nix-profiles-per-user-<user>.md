@@ -1,16 +1,18 @@
+---
+path: /nix/var/nix/profiles/per-user/<user>
+partOf: NixOS
+dirType: system profile
+topic: Profiles
+description: ""
+---
 ```dataviewjs
 const path = dv.current().path ?? "";
 const code = "`" + path.trim() + "`";
 
-const isRelative = path[0] === '.';
-const trimmed = isRelative ? path.slice(2) : path.slice(1);
-const parts = trimmed.split("/").filter(Boolean);
+const parts = path.split("/").filter(Boolean);
 const parents = [];
 for (let i = 1; i < parts.length; i++) {
-    if (isRelative)
-        parents.push("./" + parts.slice(0, i).join("/"));
-    else
-        parents.push("/" + parts.slice(0, i).join("/"));
+    parents.push("/" + parts.slice(0, i).join("/"));
 }
 
 const partOf = dv.current().partOf ?? "";
@@ -37,9 +39,7 @@ if (parents.length > 0) {
 }
 for (let i = 0; i < parents.length; i++) {
     const parent = parents[i];
-    const parentFile = parent.slice(1)
-        .replace(".", "./")
-        .replaceAll("/", "-");
+    const parentFile = parent.slice(1).replaceAll("/", "-");
     const parentPage = dv.page(parentFile);
     const parentDesc = parentPage ? parentPage.description : "";
 

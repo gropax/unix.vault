@@ -9,7 +9,7 @@ const code = "`" + path.trim() + "`";
 
 const parts = path.split("/").filter(Boolean);
 const parents = [];
-for (let i = parts.length - 1; i > 0; i--) {
+for (let i = 1; i < parts.length; i++) {
     parents.push("/" + parts.slice(0, i).join("/"));
 }
 
@@ -37,7 +37,7 @@ if (parents.length > 0) {
 }
 for (let i = 0; i < parents.length; i++) {
     const parent = parents[i];
-    const parentFile = parent.replace("/", "-");
+    const parentFile = parent.slice(1).replaceAll("/", "-");
     const parentPage = dv.page(parentFile);
     const parentDesc = parentPage ? parentPage.description : "";
 

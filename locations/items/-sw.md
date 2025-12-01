@@ -1,3 +1,8 @@
+---
+path: ./sw
+partOf: system profile
+description: ""
+---
 ```dataviewjs
 const path = dv.current().path ?? "";
 const code = "`" + path.trim() + "`";

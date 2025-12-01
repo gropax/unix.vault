@@ -1,3 +1,8 @@
+---
+path: /etc/nixos/configuration.nix
+partOf: NixOS
+description: ""
+---
 ```dataviewjs
 const path = dv.current().path ?? "";
 const code = "`" + path.trim() + "`";

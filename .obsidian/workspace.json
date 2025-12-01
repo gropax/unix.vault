@@ -13,9 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "locations/items/-sw.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "-sw"
+            }
+          }
+        ]
+      },
+      {
+        "id": "226b1285577b5ce9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a7df2e7f30947c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "locations/draft.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "draft"
@@ -78,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 542
+    "width": 279
   },
   "right": {
     "id": "3dd78bf37d04c70c",
@@ -182,33 +202,42 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
+    "locations/items/-sw-bin.md",
+    "locations/items/-sw.md",
     "locations/template.md",
+    "locations/items/etc-nixos-configuration.nix.md",
+    "locations/items/etc.md",
+    "locations/items/nix-var-nix-profiles.md",
+    "locations/items/nix-var-nix-gcroots.md",
+    "locations/items/nix-var-nix-daemon-socket.md",
+    "locations/items/etc-nixos.md",
     "locations/draft.md",
+    "locations/items/run-systemd.md",
     "locations/items/run-current-system.md",
-    "locations/items/run.md",
-    "locations/template.md~",
-    "locations/4913",
-    "concepts/draft.md",
+    "locations/items/run-wrappers.md",
+    "locations/items/run-user-<uid>.md",
+    "locations/items 1/run.md",
+    "locations/items 1/run-wrappers.md",
+    "locations/items 1/run-current-system.md",
+    "locations/items 1/run-booted-system.md",
+    "locations/items 1/nix.md",
+    "locations/items 1/nix-var.md",
+    "locations/items 1/nix-var-nix.md",
+    "locations/items 1/nix-var-nix-profiles.md",
+    "locations/items 1/nix-var-nix-profiles-system.md",
+    "locations/items 1/nix-var-nix-profiles-system-<genid>-link.md",
+    "locations/items 1/nix-var-nix-profiles-per-user-<user>.md",
+    "locations/items 1/nix-var-nix-profiles-default.md",
+    "locations/items 1",
+    "locations/items/nix-var-nix-profiles-system.md~",
     "locations/items/run.md~",
-    "locations/schema.toml~",
-    "locations/schema.toml",
-    "locations/template.toml",
-    "locations/items/run-current-system.md~",
     "locations/items/4913",
-    "concepts/items/run-current-system.md~",
-    "concepts/items/4913",
-    "commands/draft.md",
-    "dir-structs/draft.md",
-    "locations/draft.md.md",
-    "commands/draft.md.md",
-    "concepts/draft.md.md",
-    "concepts/Réseaux.md",
-    "test.md",
-    "tools/items/yt-dlp.md",
-    "auie.md",
-    "assets/png/file-20251126154642514.png",
-    "Untitled 1.md",
-    "auie.md",
-    "auie.md"
+    "locations/template.md~",
+    "locations/items/-nix",
+    "locations/items/-nix/var/nix",
+    "locations/items/-nix/var",
+    "locations/4913",
+    "locations/schema.toml~",
+    "assets/png/file-20251126154642514.png"
   ]
 }
