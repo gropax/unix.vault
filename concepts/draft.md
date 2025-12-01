@@ -13,6 +13,7 @@
 - [[POSIX capabilities]]
 
 ###### NixOS
+- [[NixOS]]
 - [[Security wrapper]] 
 - [[Current system]]
 - [[User profile]]
@@ -22,7 +23,11 @@
 - [[NixOS specialisation]]
 - [[System command]] / [[User command]]
 
+##### nixpkgs
+- [[nixpkgs]]
+
 ###### Nix
+- [[Nix language]]
 - [[Nix store]]
 - [[Nix path]] (`/nix/store/…`)
 - [[Nix profile]] : dir, links to nix paths
@@ -35,3 +40,8 @@
 - [[Nix daemon]]
 - [[Nix database]]
 
+###### Home Manager
+- [[Home Manager]]
+
+
+![[which ping#^command]]

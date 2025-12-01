@@ -1,0 +1,5 @@
+---
+command: "sudo nixos-rebuild switch --flake .#<hostname>"
+description: "Rebuild system explicitly from the flake-pinned nixpkgs revision."
+---
+

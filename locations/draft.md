@@ -78,3 +78,22 @@ Thématique:
 - [ ] `./sbin`
 - [ ] `./lib`
 - [ ] `./include`
+
+##### Home
+- [x] `~/.config`
+- [x] `~/.local`
+    - [x] `~/.local/share`
+    - [x] `~/.local/state`
+- [x] `~/.cache`
+
+
+
+
+
+
+
+
+
+
+
+

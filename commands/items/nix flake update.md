@@ -1,8 +1,12 @@
+---
+command: "nix flake update"
+description: "Update the pinned nixpkgs (and other inputs) in flake.lock."
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";
 
-const code = "```bash\n" + "# " + desc + "\n" + cmd + "\n```\n^command";
+const code = "```bash\n" + "# " + desc + "\n" + cmd + "\n```";
 
 const parts = cmd.trim().split(" ");
 const program =  parts[0] === "sudo" ? parts[1] : parts[0];

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cli-programs/items/nix-collect-garbage.md",
+                "file": "concepts/draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nix-collect-garbage"
+              "title": "draft"
             }
           }
         ]
@@ -202,14 +202,32 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
+    "commands/template.md",
+    "commands/draft.md",
+    "concepts/draft.md",
+    "commands/items/getcap $(which ping).md",
+    "locations/items/~-.local-share-nix-profiles.md",
+    "locations/draft.md",
+    "locations/items/~-.local-state.md~",
+    "locations/items/~-.local-state.md",
+    "locations/items/~-.cache.md~",
+    "locations/items/~-.cache.md",
+    "locations/items/~-.config.md~",
+    "locations/items/~-.config.md",
+    "locations/items/~-.local-share.md",
+    "locations/items/~-.local-share.md~",
+    "locations/items/~.local-share-nix-profiles.md",
+    "locations/items/~.local-share.md~",
+    "locations/items/~.local-share.md",
+    "locations/items/~.local-share-nix-profiles.md~",
+    "commands/items/sudo nixos-rebuild switch --flake .#<hostname>.md~",
+    "commands/items/sudo nixos-rebuild switch --flake .#<hostname>.md",
+    "commands/items/nix flake update.md~",
+    "commands/items/nix flake update.md",
+    "cli-programs/items/nix-collect-garbage.md",
     "commands/items/nix edit nixpkgs#<pkgs>.md~",
     "commands/items/nix edit nixpkgs#<pkgs>.md",
     "commands/items/nix-collect-garbage.md~",
-    "commands/items/sudo nix-collect-garbage -d.md~",
-    "commands/items/sudo nix-collect-garbage --delete-older-than 30d.md~",
-    "commands/items/nix-store --query --roots _nix_store_<hash>-<name>.md~",
-    "commands/items/nix-store --gc.md~",
-    "commands/items/nix-store --gc --print-dead.md~",
     "commands/items/which ping.md",
     "commands/items/sudo setcap cap_net_raw=ep $(which ping).md",
     "commands/items/sudo nix-collect-garbage -d.md",
@@ -220,24 +238,6 @@
     "commands/items/nix-store --gc --print-dead.md",
     "commands/items/nix-store --gc.md",
     "commands/items/nix-collect-garbage.md",
-    "commands/items/getcap $(which ping).md",
-    "cli-programs/items/setcap.md",
-    "cli-programs/items/which.md",
-    "cli-programs/items/nix-collect-garbage.md",
-    "cli-programs/items/nix-store.md",
-    "commands/template.md",
-    "cli-programs/items/getcap.md",
-    "cli-programs/draft.md~",
-    "cli-programs/template.md",
-    "cli-programs/schema.toml",
-    "cli-programs/draft.md",
-    "cli-programs/items/draft.md",
-    "cli-programs/items",
-    "cli-programs",
-    "commands/items/nix-store --query --roots /nix/store/<hash>-<name>.md",
-    "commands/draft.md",
-    "commands/items/which_ping.md",
-    "commands/items/getcap_$(which_ping).md",
     "assets/png/file-20251126154642514.png"
   ]
 }
