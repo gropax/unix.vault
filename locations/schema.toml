@@ -6,11 +6,15 @@ type = "String"
 [fields.partOf]
 type = "String"
 
+[fields.type]
+type = "Enum"
+values = ["directory", "file", "symlink"]
+
 [fields.dirType]
 type = "String"
 optional = true
 
-[fields.isPathSymlink]
+[fields.linksToNixPath]
 type = "Bool"
 optional = true
 

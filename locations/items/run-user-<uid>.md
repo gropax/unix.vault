@@ -1,5 +1,6 @@
 ---
 path: /run/users/<uid>
+type: directory
 partOf: NixOS
 description: ""
 ---

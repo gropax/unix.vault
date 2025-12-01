@@ -1,5 +1,7 @@
 ---
 path: /nix/var/nix/profiles/default
+type: symlink
+linksToNixPath: true
 partOf: NixOS
 topics:
 - Profiles

@@ -1,5 +1,6 @@
 ---
 path: /run/wrappers
+type: directory
 partOf: NixOS
 description: ""
 ---

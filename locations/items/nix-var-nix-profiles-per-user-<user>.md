@@ -1,7 +1,7 @@
 ---
 path: /nix/var/nix/profiles/per-user/<user>
+type: directory
 partOf: NixOS
-dirType: system profile
 topics:
 - Profiles
 description: ""

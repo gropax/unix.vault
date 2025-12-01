@@ -1,5 +1,6 @@
 ---
 path: /etc/nixos
+type: directory
 partOf: NixOS
 description: ""
 ---

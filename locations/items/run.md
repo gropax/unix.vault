@@ -1,5 +1,6 @@
 ---
 path: /run
+type: directory
 partOf: "NixOS"
 description: ""
 ---

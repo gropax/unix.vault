@@ -1,5 +1,6 @@
 ---
 path: /run/systemd
+type: directory
 partOf: NixOS
 description: ""
 ---

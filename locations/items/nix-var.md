@@ -1,5 +1,6 @@
 ---
 path: /nix/var
+type: directory
 partOf: NixOS
 description: ""
 ---

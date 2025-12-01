@@ -1,8 +1,9 @@
 ---
 path: /run/current-system
 partOf: NixOS
+type: symlink
+linksToNixPath: true
 dirType: system profile
-isPathSymlink: true
 topics:
 - Profiles
 description: ""

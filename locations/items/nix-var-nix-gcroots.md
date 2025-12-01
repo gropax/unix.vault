@@ -1,5 +1,6 @@
 ---
 path: /nix/var/nix/gcroots
+type: directory
 partOf: NixOS
 description: ""
 ---

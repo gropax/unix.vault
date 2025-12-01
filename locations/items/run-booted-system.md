@@ -1,8 +1,9 @@
 ---
 path: /run/booted-system
+type: symlink
+linksToNixPath: true
 partOf: NixOS
 dirType: system profile
-isPathSymlink: true
 topics:
 - Profiles
 description: ""

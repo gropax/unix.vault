@@ -1,5 +1,7 @@
 ---
 path: /nix/var/nix/profiles/system-<genid>-link
+type: symlink
+linksToNixPath: true
 partOf: NixOS
 dirType: system profile
 topics:

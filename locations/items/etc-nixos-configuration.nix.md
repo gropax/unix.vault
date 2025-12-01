@@ -1,5 +1,6 @@
 ---
 path: /etc/nixos/configuration.nix
+type: file
 partOf: NixOS
 description: ""
 ---

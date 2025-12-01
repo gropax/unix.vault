@@ -1,5 +1,6 @@
 ---
 path: /nix/var/nix/daemon-socket
+type: directory
 partOf: NixOS
 description: ""
 ---

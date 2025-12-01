@@ -1,5 +1,6 @@
 ---
 path: <sysprof>/sw/bin
+type: directory
 partOf: system profile
 description: ""
 ---

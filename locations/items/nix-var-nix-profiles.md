@@ -1,5 +1,6 @@
 ---
 path: /nix/var/nix/profiles
+type: directory
 partOf: NixOS
 topics:
 - Profiles

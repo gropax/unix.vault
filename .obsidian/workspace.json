@@ -202,9 +202,15 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
+    "locations/items/run-user-<uid>.md~",
+    "locations/items/nix-var-nix-profiles-per-user-<user>.md~",
+    "locations/items/nix-var-nix-profiles-default.md~",
+    "locations/items/4913",
+    "locations/schema.toml~",
+    "locations/items/<sysprof>-sw-bin.md~",
     "locations/items/<sysprof>-sw.md",
-    "locations/items/-sw.md",
     "locations/items/<sysprof>-sw-bin.md",
+    "locations/items/-sw.md",
     "locations/items/-sw-bin.md",
     "locations/items/nix-var-nix-daemon-socket.md",
     "locations/items/etc-nixos.md",
@@ -216,9 +222,6 @@
     "locations/items/nix-var-nix-gcroots.md",
     "locations/items/nix-var-nix-profiles.md~",
     "locations/items/nix-var-nix-profiles-system-<genid>-link.md~",
-    "locations/items/nix-var-nix-profiles-per-user-<user>.md~",
-    "locations/items/nix-var-nix-profiles-default.md~",
-    "locations/schema.toml~",
     "locations/draft.md",
     "locations/items/run-wrappers.md",
     "locations/items/run-booted-system.md",
@@ -235,9 +238,6 @@
     "locations/items/run.md",
     "locations/items/nix-var-nix-profiles.md",
     "locations/template.md",
-    "locations/items 1/run.md",
-    "locations/items 1",
-    "locations/items/nix-var-nix-profiles-system.md~",
     "assets/png/file-20251126154642514.png"
   ]
 }

@@ -1,5 +1,6 @@
 ---
 path: /nix/var/nix/db
+type: directory
 partOf: NixOS
 description: ""
 ---
