@@ -2,6 +2,7 @@
 path: /srv
 type: directory
 partOf: NixOS
+description: "Reserved for service data (web roots, FTP…). Generally unused on NixOS."
 ---
 ```dataviewjs
 const desc = dv.current().description ?? "";

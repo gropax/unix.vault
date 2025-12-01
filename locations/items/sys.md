@@ -2,6 +2,7 @@
 path: /sys
 type: directory
 partOf: NixOS
+description: "Virtual sysfs: hardware topology, kernel devices, module parameters."
 ---
 ```dataviewjs
 const desc = dv.current().description ?? "";

@@ -2,6 +2,7 @@
 path: /usr
 type: directory
 partOf: NixOS
+description: "Userland programs and libs on traditional Linux. On NixOS: kept minimal for FHS compliance only."
 ---
 ```dataviewjs
 const desc = dv.current().description ?? "";

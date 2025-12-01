@@ -2,6 +2,7 @@
 path: /home
 type: directory
 partOf: NixOS
+description: "Home directories for regular users."
 ---
 ```dataviewjs
 const desc = dv.current().description ?? "";

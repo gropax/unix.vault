@@ -2,6 +2,7 @@
 path: /lost+found
 type: directory
 partOf: NixOS
+description: "Recovered filesystem fragments after disk errors (EXT filesystems)."
 ---
 ```dataviewjs
 const desc = dv.current().description ?? "";

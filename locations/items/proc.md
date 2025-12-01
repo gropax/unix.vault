@@ -2,6 +2,7 @@
 path: /proc
 type: directory
 partOf: NixOS
+description: "Virtual filesystem exposing kernel and process info."
 ---
 ```dataviewjs
 const desc = dv.current().description ?? "";
