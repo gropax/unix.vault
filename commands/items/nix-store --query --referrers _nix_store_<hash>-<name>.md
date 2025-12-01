@@ -1,6 +1,7 @@
 ---
 command: "nix-store --query --referrers /nix/store/<hash>-<name>"
 description: "Display other store objects that refer to a given store item."
+legacy: true
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";

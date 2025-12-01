@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "commands/items/sudo nix-collect-garbage --delete-older-than 30d.md",
-                "mode": "preview",
+                "file": "cli-programs/items/nix-collect-garbage.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sudo nix-collect-garbage --delete-older-than 30d"
+              "title": "nix-collect-garbage"
             }
           }
         ]
@@ -202,21 +202,29 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
-    "commands/items/sudo nix-collect-garbage -d.md",
-    "commands/items/sudo setcap cap_net_raw=ep $(which ping).md",
-    "cli-programs/items/setcap.md",
+    "commands/items/nix edit nixpkgs#<pkgs>.md~",
+    "commands/items/nix edit nixpkgs#<pkgs>.md",
+    "commands/items/nix-collect-garbage.md~",
+    "commands/items/sudo nix-collect-garbage -d.md~",
+    "commands/items/sudo nix-collect-garbage --delete-older-than 30d.md~",
+    "commands/items/nix-store --query --roots _nix_store_<hash>-<name>.md~",
+    "commands/items/nix-store --gc.md~",
+    "commands/items/nix-store --gc --print-dead.md~",
     "commands/items/which ping.md",
-    "cli-programs/items/which.md",
-    "commands/items/nix-collect-garbage.md",
-    "cli-programs/items/nix-collect-garbage.md",
-    "commands/items/nix-store --query --referrers _nix_store_<hash>-<name>.md",
-    "cli-programs/items/nix-store.md",
-    "commands/items/nix-store --gc.md",
-    "commands/items/getcap $(which ping).md",
-    "commands/items/nix-store --gc --print-dead.md",
+    "commands/items/sudo setcap cap_net_raw=ep $(which ping).md",
+    "commands/items/sudo nix-collect-garbage -d.md",
+    "commands/items/sudo nix-collect-garbage --delete-older-than 30d.md",
     "commands/items/nix-store --verify --check-contents.md",
     "commands/items/nix-store --query --roots _nix_store_<hash>-<name>.md",
-    "commands/items/sudo nix-collect-garbage --delete-older-than 30d.md",
+    "commands/items/nix-store --query --referrers _nix_store_<hash>-<name>.md",
+    "commands/items/nix-store --gc --print-dead.md",
+    "commands/items/nix-store --gc.md",
+    "commands/items/nix-collect-garbage.md",
+    "commands/items/getcap $(which ping).md",
+    "cli-programs/items/setcap.md",
+    "cli-programs/items/which.md",
+    "cli-programs/items/nix-collect-garbage.md",
+    "cli-programs/items/nix-store.md",
     "commands/template.md",
     "cli-programs/items/getcap.md",
     "cli-programs/draft.md~",
@@ -226,18 +234,10 @@
     "cli-programs/items/draft.md",
     "cli-programs/items",
     "cli-programs",
-    "commands/items/nix-store --verify --check-contents.md~",
-    "commands/items/sudo nix-collect-garbage --delete-older-than 30d.md~",
-    "commands/items/nix-store --query --referrers _nix_store_<hash>-<name>.md~",
-    "commands/items/nix-store --query --roots _nix_store_<hash>-<name>.md~",
-    "commands/items/getcap $(which ping).md~",
     "commands/items/nix-store --query --roots /nix/store/<hash>-<name>.md",
-    "commands/items/nix-store --query --roots /nix/store",
     "commands/draft.md",
     "commands/items/which_ping.md",
     "commands/items/getcap_$(which_ping).md",
-    "commands/schema.toml.md",
-    "locations/draft.md",
     "assets/png/file-20251126154642514.png"
   ]
 }

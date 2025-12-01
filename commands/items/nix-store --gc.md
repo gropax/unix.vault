@@ -1,6 +1,7 @@
 ---
 command: "nix-store --gc"
 description: "Run the garbage collector: remove store paths not reachable from any GC root."
+legacy: true
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";

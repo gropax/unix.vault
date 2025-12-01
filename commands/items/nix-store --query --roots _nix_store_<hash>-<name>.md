@@ -1,6 +1,7 @@
 ---
 command: "nix-store --query --roots /nix/store/<hash>-<name>"
 description: "Show what GC roots protect a specific store path from deletion."
+legacy: true
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";

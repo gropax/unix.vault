@@ -1,0 +1,3 @@
+- System-integration tool provided by NixOS
+    - Aware of system generations
+- Wrapper around the lower-level Nix GC mechanisms
