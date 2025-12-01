@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "locations/items/nix-var-nix-gcroots.md",
+                "file": "locations/items/<sysprof>-sw-bin.md",
                 "mode": "preview",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "nix-var-nix-gcroots"
+              "title": "<sysprof>-sw-bin"
             }
           }
         ]
@@ -202,6 +202,18 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
+    "locations/items/<sysprof>-sw.md",
+    "locations/items/-sw.md",
+    "locations/items/<sysprof>-sw-bin.md",
+    "locations/items/-sw-bin.md",
+    "locations/items/nix-var-nix-daemon-socket.md",
+    "locations/items/etc-nixos.md",
+    "locations/items/etc.md",
+    "locations/items/-sw-bin.md~",
+    "locations/items/-sw.md~",
+    "locations/template.md~",
+    "locations/items/etc-nixos-configuration.nix.md",
+    "locations/items/nix-var-nix-gcroots.md",
     "locations/items/nix-var-nix-profiles.md~",
     "locations/items/nix-var-nix-profiles-system-<genid>-link.md~",
     "locations/items/nix-var-nix-profiles-per-user-<user>.md~",
@@ -222,22 +234,10 @@
     "locations/items/run-user-<uid>.md",
     "locations/items/run.md",
     "locations/items/nix-var-nix-profiles.md",
-    "locations/items/nix-var-nix-gcroots.md",
-    "locations/items/-sw.md",
-    "locations/items/-sw-bin.md",
     "locations/template.md",
-    "locations/items/etc-nixos-configuration.nix.md",
-    "locations/items/etc.md",
-    "locations/items/nix-var-nix-daemon-socket.md",
-    "locations/items/etc-nixos.md",
     "locations/items 1/run.md",
-    "locations/items 1/run-wrappers.md",
     "locations/items 1",
     "locations/items/nix-var-nix-profiles-system.md~",
-    "locations/items/run.md~",
-    "locations/items/4913",
-    "locations/template.md~",
-    "locations/items/-nix",
     "assets/png/file-20251126154642514.png"
   ]
 }
