@@ -1,8 +1,6 @@
 ---
-command: "sudo setcap cap_net_raw=ep $(which ping)"
-description: "Set `cat_ne_raw` capability of the `ping` command with value 'ep'"
-topics:
-- Capabilities
+command: "nix-store --gc"
+description: "Run the garbage collector: remove store paths not reachable from any GC root."
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";

@@ -1,8 +1,6 @@
 ---
-command: "sudo setcap cap_net_raw=ep $(which ping)"
-description: "Set `cat_ne_raw` capability of the `ping` command with value 'ep'"
-topics:
-- Capabilities
+command: "nix-store --query --roots /nix/store/<hash>-<name>"
+description: "Show what GC roots protect a specific store path from deletion."
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";

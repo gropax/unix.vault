@@ -1,8 +1,6 @@
 ---
-command: "sudo setcap cap_net_raw=ep $(which ping)"
-description: "Set `cat_ne_raw` capability of the `ping` command with value 'ep'"
-topics:
-- Capabilities
+command: "nix-store --query --referrers /nix/store/<hash>-<name>"
+description: "Display other store objects that refer to a given store item."
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";

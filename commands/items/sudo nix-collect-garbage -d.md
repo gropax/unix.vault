@@ -1,8 +1,6 @@
 ---
-command: "sudo setcap cap_net_raw=ep $(which ping)"
-description: "Set `cat_ne_raw` capability of the `ping` command with value 'ep'"
-topics:
-- Capabilities
+command: "sudo nix-collect-garbage -d"
+description: "Delete old system generations and collect all unreachable store paths."
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";

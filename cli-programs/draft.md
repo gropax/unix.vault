@@ -1,0 +1,1 @@
+Concerne tous les programmes en ligne de commande (e.g. `nix-store`) et non les **commandes**, c'est à dire des cas d'utilisation particulier de ces programmes (e.g. `nix-store --verify --check-content`).

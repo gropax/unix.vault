@@ -1,8 +1,6 @@
 ---
-command: "sudo setcap cap_net_raw=ep $(which ping)"
-description: "Set `cat_ne_raw` capability of the `ping` command with value 'ep'"
-topics:
-- Capabilities
+command: "nix-store --verify --check-contents"
+description: "Check integrity of store paths. Helps detect corrupted items before GC."
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";

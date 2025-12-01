@@ -1,8 +1,6 @@
 ---
-command: "sudo setcap cap_net_raw=ep $(which ping)"
-description: "Set `cat_ne_raw` capability of the `ping` command with value 'ep'"
-topics:
-- Capabilities
+command: "nix-store --gc --print-dead"
+description: "List what *would* be deleted by GC, without removing anything."
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";

@@ -1,8 +1,6 @@
 ---
-command: "sudo setcap cap_net_raw=ep $(which ping)"
-description: "Set `cat_ne_raw` capability of the `ping` command with value 'ep'"
-topics:
-- Capabilities
+command: "sudo nix-collect-garbage --delete-older-than 30d"
+description: "Delete Nix store items older than 30 days that are not reachable."
 ---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
