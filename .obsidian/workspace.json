@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "locations/items/<sysprof>-sw-bin.md",
-                "mode": "preview",
+                "file": "locations/items/run-users.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "<sysprof>-sw-bin"
+              "title": "run-users"
             }
           }
         ]
@@ -202,14 +202,21 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
+    "locations/items/run-users.md~",
+    "locations/items/4913",
+    "locations/items/run-user-<uid>.md",
+    "locations/items/run-users.md",
+    "locations/items/nix-var-nix-profiles-per-user.md",
+    "locations/items/nix-var-nix-profiles-per-user-<user>.md",
+    "locations/items/nix-var-nix-profiles-per-user.md~",
+    "locations/items/etc-nixos-configuration.nix.md",
+    "locations/items/<sysprof>-sw-bin.md",
     "locations/items/run-user-<uid>.md~",
     "locations/items/nix-var-nix-profiles-per-user-<user>.md~",
     "locations/items/nix-var-nix-profiles-default.md~",
-    "locations/items/4913",
     "locations/schema.toml~",
     "locations/items/<sysprof>-sw-bin.md~",
     "locations/items/<sysprof>-sw.md",
-    "locations/items/<sysprof>-sw-bin.md",
     "locations/items/-sw.md",
     "locations/items/-sw-bin.md",
     "locations/items/nix-var-nix-daemon-socket.md",
@@ -218,10 +225,7 @@
     "locations/items/-sw-bin.md~",
     "locations/items/-sw.md~",
     "locations/template.md~",
-    "locations/items/etc-nixos-configuration.nix.md",
     "locations/items/nix-var-nix-gcroots.md",
-    "locations/items/nix-var-nix-profiles.md~",
-    "locations/items/nix-var-nix-profiles-system-<genid>-link.md~",
     "locations/draft.md",
     "locations/items/run-wrappers.md",
     "locations/items/run-booted-system.md",
@@ -229,15 +233,11 @@
     "locations/items/run-systemd.md",
     "locations/items/nix-var-nix-profiles-system.md",
     "locations/items/nix-var-nix-profiles-system-<genid>-link.md",
-    "locations/items/nix-var-nix-profiles-per-user-<user>.md",
     "locations/items/nix-var-nix-profiles-default.md",
     "locations/items/nix-var.md",
     "locations/items/nix-var-nix.md",
     "locations/items/nix.md",
-    "locations/items/run-user-<uid>.md",
     "locations/items/run.md",
-    "locations/items/nix-var-nix-profiles.md",
-    "locations/template.md",
     "assets/png/file-20251126154642514.png"
   ]
 }
