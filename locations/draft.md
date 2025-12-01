@@ -55,3 +55,7 @@ Thématique:
 - `./etc`
 - `./kernel`
 - `./systemd`
+- `./bin`
+- `./sbin`
+- `./lib`
+- `./include`

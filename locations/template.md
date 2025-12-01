@@ -1,4 +1,5 @@
 ```dataviewjs
+const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";
 const code = "`" + path.trim() + "`";
 
@@ -18,6 +19,11 @@ const dirType = page.dirType;
 
 
 dv.el("div", "# " + code);
+
+if (desc) {
+    dv.el("div", dv.current().description ?? "");
+    dv.el("br");
+}
 
 dv.el("div", "Part of: " + partOfLink);
 

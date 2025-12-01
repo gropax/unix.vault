@@ -1,0 +1,2 @@
+- The GC doesn’t have a single root directory — it has a set of roots, discovered across system profiles, user profiles, and registered gcroots directories.
+    - [`/nix/var/nix/gcroots`](nix-var-nix-gcroots)

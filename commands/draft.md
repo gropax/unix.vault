@@ -15,7 +15,11 @@ sudo setcap cap_net_raw=ep $(which ping)
 ```
 
 ##### Nix
-- `nix store gc`
+- GC related
+    - `nix store gc`
+    - `nix-store --gc`
+    - `sudo nix-collect-garbage`
+    - `nix-store --query --roots <path>`
 
 ##### NixOS
 - `sudo /run/current-system/specialisation/gaming/activate

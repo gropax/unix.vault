@@ -20,14 +20,18 @@
 - [[Active system profile]]
 - [[Boot system profile]]
 - [[NixOS specialisation]]
+- [[System command]] / [[User command]]
 
 ###### Nix
 - [[Nix store]]
 - [[Nix path]] (`/nix/store/…`)
 - [[Nix profile]] : dir, links to nix paths
 - [[Nix garbage collector]]
+    - [[GC root]]
 - [[Nix shell]]
     - [[Nix shell environment]]
 - [[Nix derivation]] (`.drv`)
 - [[Nix overlay]]
+- [[Nix daemon]]
+- [[Nix database]]
 
