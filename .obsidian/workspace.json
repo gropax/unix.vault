@@ -182,6 +182,11 @@
   },
   "active": "42e3fe56a4afc1dc",
   "lastOpenFiles": [
+    "flake.nix~",
+    "scripts/valcol~",
+    "scripts/gencol~",
+    "flake.lock",
+    "flake.nix",
     "collections/locations/pages/var.md",
     "collections/locations/pages/usr.md",
     "collections/locations/pages/tmp.md",
@@ -207,17 +212,12 @@
     "collections/locations/pages/nix-var-nix-profiles-per-user.md",
     "collections/locations/pages/nix-var-nix-profiles-per-user-<user>.md",
     "collections/locations/pages/nix-var-nix-profiles-default.md",
-    "collections/locations/pages/nix-var-nix-gcroots.md",
     "collections/locations/pages",
     "collections/locations/data/~-.local-state.yaml",
     "collections/locations/data/~-.local-share.yaml",
     "collections/locations/data/~-.local-share-nix-profiles.yaml",
     "collections/locations/data/~-.config.yaml",
     "collections/locations/data/~-.cache.yaml",
-    "collections/locations/data/var.yaml",
-    "collections/locations/data/usr.yaml",
-    "collections/locations/data/tmp.yaml",
-    "collections/locations/data/sys.yaml",
     "assets/png/file-20251126154642514.png"
   ]
 }
