@@ -8,13 +8,20 @@ DATA_DIR="$VAULT_DIR/collections/commands/.data"
 anki_escape() {
     local input="$1"
     input="${input//\"/\"\"}"
-    input="${input//$'\n'/"<br>"}"
+    #input="${input//$'\n'/"<br>"}"
     printf '%s' "$input"
 }
 
-yq -r '. as $i | "\($i.command)\t\($i.description)"' "$DATA_DIR"/*.yaml | \
-while IFS=$'\t' read -r CMD DESC; do
+printf '#html:false\n'
+printf '#separator:Semicolon\n'
+printf '#columns:command;description;intention\n'
+printf '#notetype:Unix command\n'
+printf '#deck:Unix command\n'
+
+yq -r '. as $i | "\($i.command)\t\($i.description)r\t\($i.intention)"' "$DATA_DIR"/*.yaml | \
+while IFS=$'\t' read -r CMD DESC INT; do
     CMD=$(anki_escape "$CMD")
     DESC=$(anki_escape "$DESC")
-    printf '"%s";"%s"\n' "$CMD" "$DESC"
+    INT=$(anki_escape "$INT")
+    printf '"%s";"%s";"%s"\n' "$CMD" "$DESC" "$INT"
 done
