@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+: "${VAULT_DIR:="$(cd "$(dirname "$0")" && pwd)/.."}"
+
+DATA_DIR="$VAULT_DIR/collections/commands/.data"
+
+anki_escape() {
+    local input="$1"
+    input="${input//\"/\"\"}"
+    input="${input//$'\n'/"<br>"}"
+    printf '%s' "$input"
+}
+
+yq -r '. as $i | "\($i.command)\t\($i.description)"' "$DATA_DIR"/*.yaml | \
+while IFS=$'\t' read -r CMD DESC; do
+    CMD=$(anki_escape "$CMD")
+    DESC=$(anki_escape "$DESC")
+    printf '"%s";"%s"\n' "$CMD" "$DESC"
+done
