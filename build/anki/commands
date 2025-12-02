@@ -1,0 +1,19 @@
+#html:false
+#separator:Semicolon
+#columns:Command;Description;Intention
+#notetype:Unix command
+#deck:Unix command
+"getcap $(which ping)";"Get all capabilities of the `ping` commandr";"null"
+"nix-collect-garbage";"Garbage-collect for the current user only (no system generations).r";"null"
+"nix edit nixpkgs#<pkgs>";"Open the Nix expression of the specified package from nixpkgs in editor.r";"null"
+"nix flake update";"Update the pinned nixpkgs (and other inputs) in flake.lock.r";"null"
+"nix-store --gc --print-dead";"List what *would* be deleted by GC, without removing anything.r";"null"
+"nix-store --gc";"Run the garbage collector: remove store paths not reachable from any GC root.r";"null"
+"nix-store --query --referrers /nix/store/<hash>-<name>";"Display other store objects that refer to a given store item.r";"null"
+"nix-store --query --roots /nix/store/<hash>-<name>";"Show what GC roots protect a specific store path from deletion.r";"null"
+"nix-store --verify --check-contents";"Check integrity of store paths. Helps detect corrupted items before GC.r";"null"
+"sudo nix-collect-garbage --delete-older-than 30d";"Delete Nix store items older than 30 days that are not reachable.r";"null"
+"sudo nix-collect-garbage -d";"Delete old system generations and collect all unreachable store paths.r";"null"
+"sudo nixos-rebuild switch --flake .#<hostname>";"Rebuild system explicitly from the flake-pinned nixpkgs revision.r";"null"
+"sudo setcap cap_net_raw=ep $(which ping)";"Set `cat_ne_raw` capability of the `ping` command with value 'ep'r";"null"
+"which ping";"Print the location of the `ping` executable.r";"null"

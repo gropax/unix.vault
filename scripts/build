@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+: "${ROOT_DIR:="$(cd "$(dirname "$0")" && pwd)/.."}"
+
+COLL_DIR="$ROOT_DIR/collections"
+
+for dir in "$COLL_DIR"/*; do
+    if [ -d "$dir" ]; then
+        COLL_NAME=$(basename "$dir")
+
+        if [ -f "$dir/template.md" ]; then
+            echo "[$COLL_NAME] build Obsidian pages"
+            ./scripts/build-obsidian "$COLL_NAME"
+        fi
+
+        GEN_ANKI="$dir/scripts/build-anki"
+        ANKI_BUILD="$ROOT_DIR/build/anki/$COLL_NAME"
+
+        if [ -f "$GEN_ANKI" ]; then
+            echo "[$COLL_NAME] build Anki cards"
+            $GEN_ANKI > "$ANKI_BUILD"
+        fi
+    fi
+done
