@@ -14,7 +14,7 @@ anki_escape() {
 
 printf '#html:false\n'
 printf '#separator:Semicolon\n'
-printf '#columns:command;description;intention\n'
+printf '#columns:Command;Description;Intention\n'
 printf '#notetype:Unix command\n'
 printf '#deck:Unix command\n'
 
