@@ -7,12 +7,13 @@ if [ $# -lt 1 ]; then
     exit 1
 fi
 
-: "${VAULT_DIR:="$(cd "$(dirname "$0")" && pwd)/.."}"
+: "${ROOT_DIR:="$(cd "$(dirname "$0")" && pwd)/.."}"
 
-COLL_DIR="$VAULT_DIR/collections/$1"
+VAULT_DIR="$ROOT_DIR/vault"
+COLL_DIR="$ROOT_DIR/collections/$1"
 TEMPLATE_FILE="$COLL_DIR/template.md"
-DATA_DIR="$COLL_DIR/.data"
-PAGES_DIR="$COLL_DIR/pages"
+DATA_DIR="$COLL_DIR/data"
+PAGES_DIR="$VAULT_DIR/$1"
 
 if [ ! -d "$COLL_DIR" ]; then
     echo "Error: collection does not exist: $COLL_DIR"

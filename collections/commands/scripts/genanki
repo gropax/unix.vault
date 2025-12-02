@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-: "${VAULT_DIR:="$(cd "$(dirname "$0")" && pwd)/.."}"
+: "${ROOT_DIR:="$(cd "$(dirname "$0")" && pwd)/.."}"
 
-DATA_DIR="$VAULT_DIR/collections/commands/.data"
+DATA_DIR="$ROOT_DIR/collections/commands/data"
 
 anki_escape() {
     local input="$1"

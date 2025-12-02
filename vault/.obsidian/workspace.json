@@ -182,6 +182,7 @@
   },
   "active": "42e3fe56a4afc1dc",
   "lastOpenFiles": [
+    "vault",
     "collections/commands/scripts/genanki",
     "collections/commands/scripts",
     "collections/commands/genanki~",
@@ -192,7 +193,6 @@
     "scripts/gencol~",
     "scripts/valcol~",
     "collections/commands/data/which ping.yaml",
-    "collections/commands/data/sudo setcap cap_net_raw=ep $(which ping).yaml",
     "collections/commands/pages/nix-collect-garbage.md",
     "collections/commands/pages/nix-store --gc.md",
     "collections/commands/pages/nix-store --gc --print-dead.md",
