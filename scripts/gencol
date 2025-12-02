@@ -9,7 +9,7 @@ fi
 
 : "${ROOT_DIR:="$(cd "$(dirname "$0")" && pwd)/.."}"
 
-VAULT_DIR="$ROOT_DIR/vaults/Unix"
+VAULT_DIR="$ROOT_DIR/build/obsidian/Unix"
 COLL_DIR="$ROOT_DIR/collections/$1"
 TEMPLATE_FILE="$COLL_DIR/template.md"
 DATA_DIR="$COLL_DIR/data"
