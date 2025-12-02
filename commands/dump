@@ -1,0 +1,2 @@
+rg "sw" ~/dev/data/cli-commands/ -n --column | vi -q -
+rg "sw" ~/dev/data/cli-commands/ --vimgrep | vi -q -
