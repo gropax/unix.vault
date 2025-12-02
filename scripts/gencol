@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ $# -lt 1 ]; then
+    echo "Error: missing collection name."
+    echo "Usage: $0 <collection>"
+    exit 1
+fi
+
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+COLL_DIR="$BASE_DIR/../collections/$1"
+TEMPLATE_FILE="$COLL_DIR/template.md"
+DATA_DIR="$COLL_DIR/data"
+PAGES_DIR="$COLL_DIR/pages"
+
+if [ ! -d "$COLL_DIR" ]; then
+    echo "Error: collection does not exist: $COLL_DIR"
+    exit 1
+fi
+
+if [ ! -f "$TEMPLATE_FILE" ]; then
+    echo "Warning: template not found: $TEMPLATE_FILE"
+    TEMPLATE=""
+else
+    TEMPLATE="$(<"$TEMPLATE_FILE")"
+fi
+
+shopt -s nullglob
+DATA_FILES=("$DATA_DIR"/*.yaml)
+if [ ${#DATA_FILES[@]} -eq 0 ]; then
+    echo "Warning: no .yaml data files in $DATA_DIR"
+fi
+
+mkdir -p "$PAGES_DIR"
+
+for f in "${DATA_FILES[@]}"; do
+    FILE_NAME=$(basename "$f")
+    YAML="$(<"$f")"
+    PAGE_FILE="$PAGES_DIR/${FILE_NAME%.yaml}.md"
+
+    PAGE_CONTENT="\`\`\`
+    $YAML
+    \`\`\`
+    $TEMPLATE"
+
+    printf '%s\n' "$PAGE_CONTENT" > "$PAGE_FILE"
+
+    echo "Generated: $PAGE_FILE"
+done
