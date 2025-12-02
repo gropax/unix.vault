@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "collections/commands/draft.md",
+                "file": "collections/commands/pages/nix-collect-garbage.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "draft"
+              "title": "nix-collect-garbage"
             }
           }
         ]
@@ -182,6 +182,24 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
+    "collections/commands/pages/nix flake update.md",
+    "collections/commands/pages/nix edit nixpkgs#<pkgs>.md",
+    "collections/commands/pages/getcap $(which ping).md",
+    "collections/commands/pages/nix-store --verify --check-contents.md",
+    "collections/commands/pages/sudo nix-collect-garbage -d.md",
+    "collections/commands/pages/sudo nixos-rebuild switch --flake .#<hostname>.md",
+    "collections/commands/pages/sudo setcap cap_net_raw=ep $(which ping).md",
+    "collections/commands/pages/sudo nix-collect-garbage --delete-older-than 30d.md",
+    "collections/cli-programs/items/nix-collect-garbage.md",
+    "collections/commands/pages/nix-collect-garbage.md",
+    "collections/commands/pages/nix-store --gc --print-dead.md",
+    "collections/commands/pages/nix-store --query --referrers _nix_store_<hash>-<name>.md",
+    "collections/commands/pages/nix-store --query --roots _nix_store_<hash>-<name>.md",
+    "scripts/gencol~",
+    "collections/commands/pages/nix-store --gc.md",
+    "collections/commands/pages/which ping.md",
+    "collections/commands/pages",
+    "collections/commands/draft.md",
     "scripts/gencol",
     "scripts/gencol.bash~",
     "scripts/gencol.bash",
@@ -190,9 +208,6 @@
     "collections/commands/data/sudo nixos-rebuild switch --flake .#<hostname>.yaml",
     "collections/commands/data/sudo nix-collect-garbage -d.yaml",
     "collections/commands/data/sudo nix-collect-garbage --delete-older-than 30d.yaml",
-    "collections/commands/data/nix-store --verify --check-contents.yaml",
-    "collections/commands/data/nix-store --query --roots _nix_store_<hash>-<name>.yaml",
-    "collections/commands/data/nix-store --query --referrers _nix_store_<hash>-<name>.yaml",
     "collections/commands/data/which ping.md",
     "collections/commands/data/sudo setcap cap_net_raw=ep $(which ping).md",
     "collections/commands/data/sudo nixos-rebuild switch --flake .#<hostname>.md",
@@ -203,21 +218,6 @@
     "collections/commands/data/nix-store --query --referrers _nix_store_<hash>-<name>.md",
     "collections/commands/data/nix-store --gc.md",
     "collections/commands/data/nix-store --gc --print-dead.md",
-    "collections/commands/data/nix-collect-garbage.md",
-    "collections/commands/data/nix flake update.md",
-    "collections/commands/data/nix edit nixpkgs#<pkgs>.md",
-    "collections/commands/data/getcap $(which ping).md",
-    "collections/commands/template.md",
-    "collections/commands/draft.md",
-    "collections/locations/items/lost+found.md",
-    "collections/locations/items/nix.md",
-    "collections/locations/items/nix-var-nix.md",
-    "collections/locations/items/nix-var-nix-db.md",
-    "collections/locations/items/~-.cache.md",
-    "collections/commands/items/sudo nix-collect-garbage --delete-older-than 30d.md",
-    "collections/cli-programs/items/nix.md",
-    "collections/commands/items/nix flake update.md",
-    "collections/commands/items/nix-store --gc.md",
     "assets/png/file-20251126154642514.png"
   ]
 }

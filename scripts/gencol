@@ -38,12 +38,7 @@ for f in "${DATA_FILES[@]}"; do
     YAML="$(<"$f")"
     PAGE_FILE="$PAGES_DIR/${FILE_NAME%.yaml}.md"
 
-    PAGE_CONTENT="\`\`\`
-    $YAML
-    \`\`\`
-    $TEMPLATE"
-
-    printf '%s\n' "$PAGE_CONTENT" > "$PAGE_FILE"
+    printf -- '---\n%s\n---\n%s' "$YAML" "$TEMPLATE" > "$PAGE_FILE"
 
     echo "Generated: $PAGE_FILE"
 done
