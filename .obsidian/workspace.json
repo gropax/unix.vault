@@ -182,6 +182,9 @@
   },
   "active": "b2e9befa88055067",
   "lastOpenFiles": [
+    "collections/commands/schema.toml~",
+    "scripts/valcol~",
+    "scripts/valcol",
     "collections/commands/pages/nix flake update.md",
     "collections/commands/pages/nix edit nixpkgs#<pkgs>.md",
     "collections/commands/pages/getcap $(which ping).md",
@@ -206,8 +209,6 @@
     "collections/commands/data/which ping.yaml",
     "collections/commands/data/sudo setcap cap_net_raw=ep $(which ping).yaml",
     "collections/commands/data/sudo nixos-rebuild switch --flake .#<hostname>.yaml",
-    "collections/commands/data/sudo nix-collect-garbage -d.yaml",
-    "collections/commands/data/sudo nix-collect-garbage --delete-older-than 30d.yaml",
     "collections/commands/data/which ping.md",
     "collections/commands/data/sudo setcap cap_net_raw=ep $(which ping).md",
     "collections/commands/data/sudo nixos-rebuild switch --flake .#<hostname>.md",
@@ -217,7 +218,6 @@
     "collections/commands/data/nix-store --query --roots _nix_store_<hash>-<name>.md",
     "collections/commands/data/nix-store --query --referrers _nix_store_<hash>-<name>.md",
     "collections/commands/data/nix-store --gc.md",
-    "collections/commands/data/nix-store --gc --print-dead.md",
     "assets/png/file-20251126154642514.png"
   ]
 }

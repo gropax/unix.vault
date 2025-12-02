@@ -10,3 +10,7 @@ type = "String"
 type = "String"
 multiplicity = "Many"
 optional = true
+
+[fields.legacy]
+type = "Bool"
+optional = true
