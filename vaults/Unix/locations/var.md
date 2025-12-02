@@ -1,3 +1,9 @@
+---
+path: /var
+type: directory
+partOf: NixOS
+description: "Variable state: logs, caches, databases, spool. Persistent across reboots."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

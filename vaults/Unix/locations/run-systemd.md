@@ -1,3 +1,9 @@
+---
+path: /run/systemd
+type: directory
+partOf: NixOS
+description: Runtime files and state used by systemd while the system runs.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

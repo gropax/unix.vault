@@ -1,3 +1,8 @@
+---
+path: <sysprof>/sw
+type: directory
+partOf: system profile
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

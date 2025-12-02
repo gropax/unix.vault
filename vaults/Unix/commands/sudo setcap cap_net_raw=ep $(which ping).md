@@ -1,3 +1,9 @@
+---
+command: "sudo setcap cap_net_raw=ep $(which ping)"
+description: "Set `cat_ne_raw` capability of the `ping` command with value 'ep'"
+topics:
+- Capabilities
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";

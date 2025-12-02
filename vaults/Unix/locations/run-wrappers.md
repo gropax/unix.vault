@@ -1,3 +1,9 @@
+---
+path: /run/wrappers
+type: directory
+partOf: NixOS
+description: Setcap and sandboxed wrappers allowing privileged features while keeping binaries unprivileged.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

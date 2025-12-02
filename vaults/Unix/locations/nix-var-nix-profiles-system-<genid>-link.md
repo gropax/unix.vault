@@ -1,3 +1,13 @@
+---
+path: /nix/var/nix/profiles/system-<genid>-link
+type: symlink
+linksToNixPath: true
+partOf: NixOS
+dirType: system profile
+topics:
+- Profiles
+description: Profile link for a specific system generation identified by generation number.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

@@ -1,3 +1,9 @@
+---
+path: <sysprof>/sw/bin
+type: directory
+partOf: system profile
+description: "Provides the executables of the system profile. It is the merged, user-visible binary set created from the store, forming the runtime environment exposed through the PATH."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

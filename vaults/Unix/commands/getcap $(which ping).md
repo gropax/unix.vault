@@ -1,3 +1,9 @@
+---
+command: "getcap $(which ping)"
+description: "Get all capabilities of the `ping` command"
+topics:
+- Capabilities
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";

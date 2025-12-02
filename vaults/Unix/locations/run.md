@@ -1,3 +1,9 @@
+---
+path: /run
+type: directory
+partOf: "NixOS"
+description: Top-level volatile runtime directory recreated on boot (tmpfs).
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

@@ -1,3 +1,9 @@
+---
+path: /etc
+type: directory
+partOf: NixOS
+description: Traditional Linux system configuration directory for global settings and services.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

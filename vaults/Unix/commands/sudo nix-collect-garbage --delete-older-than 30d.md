@@ -1,3 +1,7 @@
+---
+command: "sudo nix-collect-garbage --delete-older-than 30d"
+description: "Delete Nix store items older than 30 days that are not reachable."
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";

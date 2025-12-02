@@ -1,3 +1,8 @@
+---
+path: /nix/store
+type: directory
+partOf: NixOS
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

@@ -1,3 +1,9 @@
+---
+path: /nix/var
+type: directory
+partOf: NixOS
+description: "State and variable data managed by Nix and the Nix daemon."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

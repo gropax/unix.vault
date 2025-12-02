@@ -1,3 +1,9 @@
+---
+command: "which ping"
+description: "Print the location of the `ping` executable."
+topics:
+- File system
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";

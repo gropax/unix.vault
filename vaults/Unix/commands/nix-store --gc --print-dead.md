@@ -1,3 +1,8 @@
+---
+command: "nix-store --gc --print-dead"
+description: "List what *would* be deleted by GC, without removing anything."
+legacy: true
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";

@@ -1,3 +1,13 @@
+---
+path: /nix/var/nix/profiles/system
+type: symlink
+linksToNixPath: true
+partOf: NixOS
+dirType: system profile
+topics:
+- Profiles
+description: "Symlink to the currently active NixOS system profile, representing the system generation in use."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

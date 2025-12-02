@@ -25,7 +25,7 @@
 
           shellHook = ''
             export PATH=$PATH:${toString ./scripts}
-            export VAULT_DIR=$(pwd)
+            export ROOT_DIR=$(pwd)
           '';
         };
       }

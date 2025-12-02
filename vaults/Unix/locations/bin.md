@@ -1,3 +1,9 @@
+---
+path: /bin
+type: directory
+partOf: NixOS
+description: "Essential user executables needed early at boot (on non-NixOS systems). On NixOS, minimal: mostly compatibility links."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "collections/commands/pages/nix flake update.md",
+                "file": "locations/nix-var-nix-db.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nix flake update"
+              "title": "nix-var-nix-db"
             }
           }
         ]
@@ -180,8 +180,32 @@
       "bases:Create new base": false
     }
   },
-  "active": "42e3fe56a4afc1dc",
+  "active": "b2e9befa88055067",
   "lastOpenFiles": [
+    "locations/nix-var-nix-gcroots.md",
+    "locations/boot.md",
+    "locations/lost+found.md",
+    "locations/nix-var-nix-profiles-default.md",
+    "locations/nix-var-nix-profiles-per-user-<user>.md",
+    "locations/nix-var-nix-daemon-socket.md",
+    "locations/etc.md",
+    "locations/~-.local-share.md",
+    "locations/nix-var.md",
+    "locations/home.md",
+    "locations/bin.md",
+    "commands/which ping.md",
+    "commands/nix-store --query --roots _nix_store_<hash>-<name>.md",
+    "commands/sudo nix-collect-garbage -d.md",
+    "commands/sudo nixos-rebuild switch --flake .#<hostname>.md",
+    "commands/sudo setcap cap_net_raw=ep $(which ping).md",
+    "commands/nix-collect-garbage.md",
+    "commands/nix-store --query --referrers _nix_store_<hash>-<name>.md",
+    "commands/sudo nix-collect-garbage --delete-older-than 30d.md",
+    "commands/nix flake update.md",
+    "commands/nix-store --gc --print-dead.md",
+    "commands/nix-store --gc.md",
+    "commands/nix edit nixpkgs#<pkgs>.md",
+    "commands/getcap $(which ping).md",
     "vault",
     "collections/commands/scripts/genanki",
     "collections/commands/scripts",
@@ -192,32 +216,8 @@
     "scripts/generate-command-cards",
     "scripts/gencol~",
     "scripts/valcol~",
-    "collections/commands/data/which ping.yaml",
     "collections/commands/pages/nix-collect-garbage.md",
     "collections/commands/pages/nix-store --gc.md",
-    "collections/commands/pages/nix-store --gc --print-dead.md",
-    "collections/commands/pages/nix-store --query --referrers _nix_store_<hash>-<name>.md",
-    "collections/commands/pages/nix-store --query --roots _nix_store_<hash>-<name>.md",
-    "collections/commands/pages/sudo nix-collect-garbage --delete-older-than 30d.md",
-    "collections/commands/pages/sudo nixos-rebuild switch --flake .#<hostname>.md",
-    "collections/commands/pages/which ping.md",
-    "collections/commands/pages/sudo setcap cap_net_raw=ep $(which ping).md",
-    "collections/commands/pages/nix-store --verify --check-contents.md",
-    "collections/commands/pages/nix flake update.md",
-    "collections/commands/drafts/sed.md",
-    "collections/locations/pages/var.md",
-    "collections/locations/pages/usr.md",
-    "collections/locations/pages/tmp.md",
-    "collections/locations/pages/sys.md",
-    "collections/locations/pages/<sysprof>-sw.md",
-    "collections/locations/pages/<sysprof>-sw-bin.md",
-    "collections/locations/pages/srv.md",
-    "collections/locations/pages/run.md",
-    "collections/locations/pages/run-wrappers.md",
-    "collections/locations/pages/run-user-<uid>.md",
-    "collections/locations/pages/run-users.md",
-    "collections/locations/pages/run-systemd.md",
-    "collections/locations/pages/run-current-system.md",
     "assets/png/file-20251126154642514.png"
   ]
 }

@@ -1,3 +1,7 @@
+---
+command: "sudo nix-collect-garbage -d"
+description: "Delete old system generations and collect all unreachable store paths."
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";

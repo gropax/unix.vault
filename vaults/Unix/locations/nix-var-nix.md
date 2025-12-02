@@ -1,3 +1,9 @@
+---
+path: /nix/var/nix
+type: directory
+partOf: NixOS
+description: "Main working directory of Nix: databases, profiles, gc roots."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

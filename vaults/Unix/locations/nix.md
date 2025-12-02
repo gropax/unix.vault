@@ -1,3 +1,9 @@
+---
+path: /nix
+type: directory
+partOf: NixOS
+description: "Root of the Nix store and all Nix-managed data."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

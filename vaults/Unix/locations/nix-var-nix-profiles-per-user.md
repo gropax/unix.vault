@@ -1,3 +1,11 @@
+---
+path: /nix/var/nix/profiles/per-user
+type: directory
+partOf: NixOS
+topics:
+- Profiles
+description: Profiles stored per user, enabling independent environments.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

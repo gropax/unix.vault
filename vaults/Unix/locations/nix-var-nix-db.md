@@ -1,3 +1,9 @@
+---
+path: /nix/var/nix/db
+type: directory
+partOf: NixOS
+description: Database storing derivation and store metadata indexed by the Nix daemon.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

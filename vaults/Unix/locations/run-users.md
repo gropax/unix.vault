@@ -1,3 +1,9 @@
+---
+path: /run/users
+type: directory
+partOf: NixOS
+description: Runtime directories for user sessions.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

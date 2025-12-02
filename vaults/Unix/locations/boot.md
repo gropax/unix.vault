@@ -1,3 +1,9 @@
+---
+path: /boot
+type: directory
+partOf: NixOS
+description: "Bootloader files, kernels, initrd. Used by GRUB and firmware."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

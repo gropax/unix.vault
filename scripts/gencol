@@ -9,11 +9,13 @@ fi
 
 : "${ROOT_DIR:="$(cd "$(dirname "$0")" && pwd)/.."}"
 
-VAULT_DIR="$ROOT_DIR/vault"
+VAULT_DIR="$ROOT_DIR/vaults/Unix"
 COLL_DIR="$ROOT_DIR/collections/$1"
 TEMPLATE_FILE="$COLL_DIR/template.md"
 DATA_DIR="$COLL_DIR/data"
 PAGES_DIR="$VAULT_DIR/$1"
+
+echo "$PAGES_DIR"
 
 if [ ! -d "$COLL_DIR" ]; then
     echo "Error: collection does not exist: $COLL_DIR"

@@ -1,3 +1,9 @@
+---
+path: /root
+type: directory
+partOf: NixOS
+description: "Home directory of the root (administrator) user."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";
