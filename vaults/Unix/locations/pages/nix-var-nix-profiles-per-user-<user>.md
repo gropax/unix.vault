@@ -20,7 +20,7 @@ for (let i = 1; i < parts.length; i++) {
 }
 
 const partOf = dv.current().partOf ?? "";
-const partOfLink = "[[dir-structs/pages/" + partOf + "|" + partOf + "]]";
+const partOfLink = "[[directory-types/pages/" + partOf + "|" + partOf + "]]";
 
 const page = dv.current();
 const dirType = page.dirType;
@@ -36,7 +36,7 @@ if (desc) {
 dv.el("div", "Part of: " + partOfLink);
 
 if (dirType) {
-    let link = "[[dir-structs/pages/" + dirType + "|" + dirType + "]]";
+    let link = "[[directory-types/pages/" + dirType + "|" + dirType + "]]";
     if (page.isPathSymlink) {
         link = "symlink to " + link + " in nix path";
     }
