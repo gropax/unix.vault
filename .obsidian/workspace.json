@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "collections/commands/drafts/sed.md",
+                "file": "collections/commands/pages/nix flake update.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sed"
+              "title": "nix flake update"
             }
           }
         ]
@@ -182,11 +182,29 @@
   },
   "active": "42e3fe56a4afc1dc",
   "lastOpenFiles": [
-    "flake.nix~",
-    "scripts/valcol~",
     "scripts/gencol~",
-    "flake.lock",
-    "flake.nix",
+    "scripts/valcol~",
+    "collections/commands/data/which ping.yaml",
+    "collections/commands/data/sudo setcap cap_net_raw=ep $(which ping).yaml",
+    "collections/commands/data/sudo nixos-rebuild switch --flake .#<hostname>.yaml",
+    "collections/commands/data/sudo nix-collect-garbage -d.yaml",
+    "collections/commands/data/sudo nix-collect-garbage --delete-older-than 30d.yaml",
+    "collections/commands/data/nix-store --verify --check-contents.yaml",
+    "collections/commands/data/nix-store --query --roots _nix_store_<hash>-<name>.yaml",
+    "collections/commands/data/nix-store --query --referrers _nix_store_<hash>-<name>.yaml",
+    "collections/commands/data/nix-store --gc.yaml",
+    "collections/commands/pages/nix-collect-garbage.md",
+    "collections/commands/pages/nix-store --gc.md",
+    "collections/commands/pages/nix-store --gc --print-dead.md",
+    "collections/commands/pages/nix-store --query --referrers _nix_store_<hash>-<name>.md",
+    "collections/commands/pages/nix-store --query --roots _nix_store_<hash>-<name>.md",
+    "collections/commands/pages/sudo nix-collect-garbage --delete-older-than 30d.md",
+    "collections/commands/pages/sudo nixos-rebuild switch --flake .#<hostname>.md",
+    "collections/commands/pages/which ping.md",
+    "collections/commands/pages/sudo setcap cap_net_raw=ep $(which ping).md",
+    "collections/commands/pages/nix-store --verify --check-contents.md",
+    "collections/commands/pages/nix flake update.md",
+    "collections/commands/drafts/sed.md",
     "collections/locations/pages/var.md",
     "collections/locations/pages/usr.md",
     "collections/locations/pages/tmp.md",
@@ -200,24 +218,6 @@
     "collections/locations/pages/run-users.md",
     "collections/locations/pages/run-systemd.md",
     "collections/locations/pages/run-current-system.md",
-    "collections/locations/pages/run-booted-system.md",
-    "collections/locations/pages/root.md",
-    "collections/locations/pages/proc.md",
-    "collections/locations/pages/nix.md",
-    "collections/locations/pages/nix-var.md",
-    "collections/locations/pages/nix-var-nix.md",
-    "collections/locations/pages/nix-var-nix-profiles.md",
-    "collections/locations/pages/nix-var-nix-profiles-system.md",
-    "collections/locations/pages/nix-var-nix-profiles-system-<genid>-link.md",
-    "collections/locations/pages/nix-var-nix-profiles-per-user.md",
-    "collections/locations/pages/nix-var-nix-profiles-per-user-<user>.md",
-    "collections/locations/pages/nix-var-nix-profiles-default.md",
-    "collections/locations/pages",
-    "collections/locations/data/~-.local-state.yaml",
-    "collections/locations/data/~-.local-share.yaml",
-    "collections/locations/data/~-.local-share-nix-profiles.yaml",
-    "collections/locations/data/~-.config.yaml",
-    "collections/locations/data/~-.cache.yaml",
     "assets/png/file-20251126154642514.png"
   ]
 }

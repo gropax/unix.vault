@@ -11,7 +11,7 @@ fi
 
 COLL_DIR="$VAULT_DIR/collections/$1"
 TEMPLATE_FILE="$COLL_DIR/template.md"
-DATA_DIR="$COLL_DIR/data"
+DATA_DIR="$COLL_DIR/.data"
 PAGES_DIR="$COLL_DIR/pages"
 
 if [ ! -d "$COLL_DIR" ]; then

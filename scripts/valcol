@@ -11,7 +11,7 @@ fi
 
 COLL_DIR="$VAULT_DIR/collections/$1"
 SCHEMA_FILE="$COLL_DIR/schema.toml"
-DATA_FILES="$COLL_DIR/data/*.yaml"
+DATA_FILES="$COLL_DIR/.data/*.yaml"
 
 if [ ! -d "$COLL_DIR" ]; then
     echo "Error: collection does not exist: $COLL_DIR"
