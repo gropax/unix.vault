@@ -1,3 +1,8 @@
+---
+command: "nix-store --verify --check-contents"
+description: "Check integrity of store paths. Helps detect corrupted items before GC."
+legacy: true
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";

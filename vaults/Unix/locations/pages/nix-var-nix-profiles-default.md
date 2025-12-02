@@ -1,3 +1,12 @@
+---
+path: /nix/var/nix/profiles/default
+type: symlink
+linksToNixPath: true
+partOf: NixOS
+topics:
+- Profiles
+description: Default profile for interactive use, usually linked to the root user’s environment.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

@@ -1,3 +1,7 @@
+---
+command: "nix flake update"
+description: "Update the pinned nixpkgs (and other inputs) in flake.lock."
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";

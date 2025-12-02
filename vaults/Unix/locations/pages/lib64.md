@@ -1,3 +1,9 @@
+---
+path: /lib64
+type: directory
+partOf: NixOS
+description: "64-bit system libraries required by early-boot binaries. Minimal on NixOS."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

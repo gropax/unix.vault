@@ -1,3 +1,13 @@
+---
+path: /run/booted-system
+type: symlink
+linksToNixPath: true
+partOf: NixOS
+dirType: system profile
+topics:
+- Profiles
+description: Link to the system profile actually booted from, useful to compare with “current-system”.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

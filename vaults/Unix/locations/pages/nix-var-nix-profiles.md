@@ -1,3 +1,11 @@
+---
+path: /nix/var/nix/profiles
+type: directory
+partOf: NixOS
+topics:
+- Profiles
+description: "Directory storing all system and user profiles built by Nix."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

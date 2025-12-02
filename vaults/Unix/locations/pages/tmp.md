@@ -1,3 +1,9 @@
+---
+path: /tmp
+type: directory
+partOf: NixOS
+description: "Temporary files, cleared at reboot. World-writable."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

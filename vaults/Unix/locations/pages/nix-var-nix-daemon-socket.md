@@ -1,3 +1,9 @@
+---
+path: /nix/var/nix/daemon-socket
+type: directory
+partOf: NixOS
+description: Communication socket between Nix client tools and the daemon.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

@@ -1,3 +1,13 @@
+---
+path: /run/current-system
+partOf: NixOS
+type: symlink
+linksToNixPath: true
+dirType: system profile
+topics:
+- Profiles
+description: Volatile symlink referencing the system generation currently booted and active.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

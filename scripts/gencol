@@ -13,7 +13,7 @@ VAULT_DIR="$ROOT_DIR/vaults/Unix"
 COLL_DIR="$ROOT_DIR/collections/$1"
 TEMPLATE_FILE="$COLL_DIR/template.md"
 DATA_DIR="$COLL_DIR/data"
-PAGES_DIR="$VAULT_DIR/$1"
+PAGES_DIR="$VAULT_DIR/$1/pages"
 
 echo "$PAGES_DIR"
 

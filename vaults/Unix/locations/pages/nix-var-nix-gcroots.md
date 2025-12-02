@@ -1,3 +1,9 @@
+---
+path: /nix/var/nix/gcroots
+type: directory
+partOf: NixOS
+description: Roots protecting store paths from garbage collection until explicitly removed.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

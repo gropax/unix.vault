@@ -1,3 +1,9 @@
+---
+path: /run/users/<uid>
+type: directory
+partOf: NixOS
+description: Volatile per-user runtime directory for sockets, caches, and session files.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

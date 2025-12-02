@@ -1,3 +1,9 @@
+---
+path: /dev
+type: directory
+partOf: NixOS
+description: "Device files managed by the kernel and udev (terminals, disks, sockets)."
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

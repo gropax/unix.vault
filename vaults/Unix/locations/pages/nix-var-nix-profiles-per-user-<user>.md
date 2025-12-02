@@ -1,3 +1,11 @@
+---
+path: /nix/var/nix/profiles/per-user/<user>
+type: directory
+partOf: NixOS
+topics:
+- Profiles
+description: Profile directory for a specific user, holding environment generations and symlinks.
+---
 ```dataviewjs
 const desc = dv.current().description ?? "";
 const path = dv.current().path ?? "";

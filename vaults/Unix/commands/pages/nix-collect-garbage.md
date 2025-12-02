@@ -1,3 +1,7 @@
+---
+command: "nix-collect-garbage"
+description: "Garbage-collect for the current user only (no system generations)."
+---
 ```dataviewjs
 const cmd = dv.current().command ?? "";
 const desc = dv.current().description ?? "";
