@@ -15,7 +15,7 @@ dv.el("div", code);
 const cmd = dv.current().command ?? "";
 const parts = cmd.trim().split(" ");
 const program =  parts[0] === "sudo" ? parts[1] : parts[0];
-const programLink = "[[collections/cli-programs/items/" + program + "|" + program + "]]";
+const programLink = "[[collections/cli-programs/pages/" + program + "|" + program + "]]";
 
 dv.el("div", "Program: " + programLink);
 ```

@@ -45,7 +45,7 @@ for (let i = 0; i < parents.length; i++) {
     const parentPage = dv.page(parentFile);
     const parentDesc = parentPage ? parentPage.description : "";
 
-    let line = "[[collections/locations/items/" + parentFile + "|" + parent + "]]";
+    let line = "[[collections/locations/pages/" + parentFile + "|" + parent + "]]";
     if (parentDesc)
         line = line + ": " + parentDesc;
 

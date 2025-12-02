@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "collections/commands/pages/nix-collect-garbage.md",
+                "file": "collections/commands/drafts/sed.md",
                 "mode": "preview",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "nix-collect-garbage"
+              "title": "sed"
             }
           }
         ]
@@ -180,35 +180,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "b2e9befa88055067",
+  "active": "42e3fe56a4afc1dc",
   "lastOpenFiles": [
+    "collections/commands/template.md~",
+    "collections/locations/template.md~",
+    "collections/commands/pages/sudo nix-collect-garbage -d.md",
+    "collections/commands/pages/nix-store --verify --check-contents.md",
+    "collections/commands/pages/nix-store --query --referrers _nix_store_<hash>-<name>.md",
+    "collections/commands/pages/nix-store --gc.md",
+    "collections/commands/pages/getcap $(which ping).md",
+    "collections/commands/pages/which ping.md",
+    "collections/commands/pages/sudo setcap cap_net_raw=ep $(which ping).md",
+    "collections/commands/pages/sudo nixos-rebuild switch --flake .#<hostname>.md",
+    "collections/commands/pages/sudo nix-collect-garbage --delete-older-than 30d.md",
+    "collections/commands/pages/nix-store --query --roots _nix_store_<hash>-<name>.md",
+    "collections/commands/pages/nix-store --gc --print-dead.md",
+    "collections/commands/pages/nix flake update.md",
+    "collections/commands/pages/nix edit nixpkgs#<pkgs>.md",
+    "collections/commands/pages/nix-collect-garbage.md",
+    "collections/commands/pages",
     "collections/commands/schema.toml~",
     "scripts/valcol~",
     "scripts/valcol",
-    "collections/commands/pages/nix flake update.md",
-    "collections/commands/pages/nix edit nixpkgs#<pkgs>.md",
-    "collections/commands/pages/getcap $(which ping).md",
-    "collections/commands/pages/nix-store --verify --check-contents.md",
-    "collections/commands/pages/sudo nix-collect-garbage -d.md",
-    "collections/commands/pages/sudo nixos-rebuild switch --flake .#<hostname>.md",
-    "collections/commands/pages/sudo setcap cap_net_raw=ep $(which ping).md",
-    "collections/commands/pages/sudo nix-collect-garbage --delete-older-than 30d.md",
     "collections/cli-programs/items/nix-collect-garbage.md",
-    "collections/commands/pages/nix-collect-garbage.md",
-    "collections/commands/pages/nix-store --gc --print-dead.md",
-    "collections/commands/pages/nix-store --query --referrers _nix_store_<hash>-<name>.md",
-    "collections/commands/pages/nix-store --query --roots _nix_store_<hash>-<name>.md",
     "scripts/gencol~",
-    "collections/commands/pages/nix-store --gc.md",
-    "collections/commands/pages/which ping.md",
-    "collections/commands/pages",
-    "collections/commands/draft.md",
+    "collections/commands/drafts/draft.md",
     "scripts/gencol",
     "scripts/gencol.bash~",
     "scripts/gencol.bash",
     "collections/commands/data/which ping.yaml",
-    "collections/commands/data/sudo setcap cap_net_raw=ep $(which ping).yaml",
-    "collections/commands/data/sudo nixos-rebuild switch --flake .#<hostname>.yaml",
     "collections/commands/data/which ping.md",
     "collections/commands/data/sudo setcap cap_net_raw=ep $(which ping).md",
     "collections/commands/data/sudo nixos-rebuild switch --flake .#<hostname>.md",
