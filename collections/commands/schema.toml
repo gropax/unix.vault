@@ -6,11 +6,19 @@ type = "String"
 [fields.description]
 type = "String"
 
+[fields.intention]
+type = "String"
+
+[fields.program]
+type = "String"
+
+[fields.requireSudo]
+type = "Bool"
+
+[fields.deprecated]
+type = "Bool"
+
 [fields.topics]
 type = "String"
 multiplicity = "Many"
-optional = true
-
-[fields.legacy]
-type = "Bool"
 optional = true
