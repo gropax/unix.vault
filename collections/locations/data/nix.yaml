@@ -1,0 +1,4 @@
+path: /nix
+type: directory
+partOf: NixOS
+description: "Root of the Nix store and all Nix-managed data."

@@ -1,0 +1,4 @@
+path: /etc
+type: directory
+partOf: NixOS
+description: Traditional Linux system configuration directory for global settings and services.

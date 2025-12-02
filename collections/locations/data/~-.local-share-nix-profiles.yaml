@@ -1,0 +1,5 @@
+path: ~/.local/share/nix/profiles
+type: directory
+partOf: NixOS
+topics:
+- Profiles

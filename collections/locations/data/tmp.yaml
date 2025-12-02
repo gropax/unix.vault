@@ -1,0 +1,4 @@
+path: /tmp
+type: directory
+partOf: NixOS
+description: "Temporary files, cleared at reboot. World-writable."

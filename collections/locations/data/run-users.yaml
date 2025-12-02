@@ -1,0 +1,4 @@
+path: /run/users
+type: directory
+partOf: NixOS
+description: Runtime directories for user sessions.

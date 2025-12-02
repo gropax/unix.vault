@@ -1,0 +1,4 @@
+path: /run/users/<uid>
+type: directory
+partOf: NixOS
+description: Volatile per-user runtime directory for sockets, caches, and session files.

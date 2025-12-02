@@ -1,0 +1,4 @@
+path: /run/wrappers
+type: directory
+partOf: NixOS
+description: Setcap and sandboxed wrappers allowing privileged features while keeping binaries unprivileged.
