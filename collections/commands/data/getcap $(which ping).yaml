@@ -1,0 +1,4 @@
+command: "getcap $(which ping)"
+description: "Get all capabilities of the `ping` command"
+topics:
+- Capabilities

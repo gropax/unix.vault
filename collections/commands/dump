@@ -1,2 +1,2 @@
-rg "sw" ~/dev/data/cli-commands/ -n --column | vi -q -
 rg "sw" ~/dev/data/cli-commands/ --vimgrep | vi -q -
+echo $history[1] >> ~/dev/data/cli-commands/commands/dump
