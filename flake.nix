@@ -19,6 +19,10 @@
       in
       {
         devShells.default = pkgs.mkShell {
+          packages = with pkgs; [
+            yq
+          ];
+
           shellHook = ''
             export PATH=$PATH:${toString ./scripts}
             export VAULT_DIR=$(pwd)
