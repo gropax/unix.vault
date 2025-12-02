@@ -21,6 +21,10 @@
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             yq
+            (pkgs.python3.withPackages (pypkgs: with pypkgs; [
+              openai
+              pyyaml
+            ]))
           ];
 
           shellHook = ''

@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+import re
+from pathlib import Path
+from itertools import batched
+from openai import OpenAI
+
+OPENAI_MODEL = "gpt-5.1"
+
+
+collection_path = Path(__file__).parent / ".."
+data_path = collection_path / "data"
+
+
+api_key_file = os.getenv("OPENAI_API_KEY_FILE")
+if api_key_file is None:
+    sys.stderr.write("OPENAI_API_KEY_FILE env var is not set")
+    sys.exit(1)
+
+api_key_path = Path(api_key_file)
+try:
+    api_key = api_key_path.read_text().strip()
+except OSError as e:
+    sys.stderr.write(f"Can't read API key file {api_key_file}: {e}\n")
+    sys.exit(1)
+
+client = OpenAI(api_key=api_key)
+
+
+prompt_path = collection_path / "prompt.txt"
+try:
+    prompt = prompt_path.read_text()
+except OSError as e:
+    sys.stderr.write(f"Can't AI prompt file {prompt_path}: {e}\n")
+    sys.exit(1)
+
+
+source_path = collection_path / "src"
+commands = [
+    #f"command: \"{c.strip()}\""
+    c.strip()
+    for file in source_path.iterdir()
+    for c in re.split("\n\n+", file.read_text())
+]
+input = "\n---\n".join(commands)
+
+#sys.stderr.write(input + "\n")
+#sys.exit(0)
+
+for batch in batched(commands, 10):
+    response = client.responses.create(
+        model=OPENAI_MODEL,
+        instructions=prompt,
+        input=input,
+    )
+
+    sys.stderr.write(response.output_text)
