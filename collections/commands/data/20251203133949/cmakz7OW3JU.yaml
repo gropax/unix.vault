@@ -1,0 +1,12 @@
+command: nix flake update
+description: Update the locked inputs of the current Nix flake to their latest versions.
+intention: Update the locked inputs of the current Nix flake to their latest available
+  versions.
+tool:
+- nix
+- nix flake
+- nix flake update
+guid: cmakz7OW3JU
+aliases:
+- nix flake update
+requireSudo: false

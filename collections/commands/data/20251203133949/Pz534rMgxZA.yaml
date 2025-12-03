@@ -1,0 +1,12 @@
+command: nix edit nixpkgs#git
+description: Open the Nix expression for the "git" package from the "nixpkgs" flake
+  in an editor.
+intention: Open the Nix package definition of "git" from the "nixpkgs" flake in an
+  editor.
+tool:
+- nix
+- nix edit
+guid: Pz534rMgxZA
+aliases:
+- nix edit nixpkgs#git
+requireSudo: false

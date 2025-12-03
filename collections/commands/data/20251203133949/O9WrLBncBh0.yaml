@@ -1,0 +1,10 @@
+command: rg "abc" ./dir/ --vimgrep | vi -q -
+description: Search recursively for "abc" in "./dir/" with ripgrep in vimgrep format
+  and open the quickfix results in "vi".
+intention: Using ripgrep, search for "abc" using "rg" in "./dir/" and open the results in a "vi" quickfix list.
+tool:
+- rg
+guid: O9WrLBncBh0
+aliases:
+- rg "abc" ./dir/ --vimgrep | vi -q -
+requireSudo: false

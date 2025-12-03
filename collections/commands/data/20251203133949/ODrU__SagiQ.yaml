@@ -1,0 +1,10 @@
+command: getcap $(which ping)
+description: Display the POSIX capabilities set on the "ping" executable resolved
+  by "which".
+intention: Show the capabilities configured on the "ping" executable in PATH.
+tool:
+- getcap
+guid: ODrU__SagiQ
+aliases:
+- getcap $(which ping)
+requireSudo: false

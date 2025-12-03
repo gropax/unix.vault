@@ -1,0 +1,9 @@
+command: which ping
+description: Show the full path of the "ping" executable found in the current PATH.
+intention: Display the filesystem path of the "ping" executable.
+tool:
+- which
+guid: sXgZEtXK-9U
+aliases:
+- which ping
+requireSudo: false

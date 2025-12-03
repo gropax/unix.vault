@@ -1,0 +1,9 @@
+command: sudo nix-collect-garbage -d
+description: Delete old and unreachable Nix store paths and system generations.
+intention: Delete old and unreachable Nix store paths and system generations.
+tool:
+- nix-collect-garbage
+guid: rpyTAN7yrZA
+aliases:
+- sudo nix-collect-garbage -d
+requireSudo: true

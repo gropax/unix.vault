@@ -1,0 +1,11 @@
+command: sudo nixos-rebuild switch --flake .#desktop
+description: Build and switch the running system to the NixOS configuration "desktop"
+  from the current flake.
+intention: Rebuild the system and switch to the "desktop" NixOS configuration from
+  the current flake.
+tool:
+- nixos-rebuild
+guid: klnpRGYP8po
+aliases:
+- sudo nixos-rebuild switch --flake .#desktop
+requireSudo: true

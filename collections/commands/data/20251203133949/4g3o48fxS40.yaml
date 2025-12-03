@@ -1,0 +1,11 @@
+command: sudo setcap cap_net_raw=ep $(which ping)
+description: Grant the "ping" executable capability "cap_net_raw=ep" so it can use
+  raw sockets without full root privileges.
+intention: Configure the "ping" executable with the "cap_net_raw=ep" capability.
+tool:
+- setcap
+nixos: TODO
+guid: 4g3o48fxS40
+aliases:
+- sudo setcap cap_net_raw=ep $(which ping)
+requireSudo: true

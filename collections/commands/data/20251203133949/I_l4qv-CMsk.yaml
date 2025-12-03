@@ -1,0 +1,8 @@
+command: echo $history[1] >> ./file
+description: In fish, append the last command in history as text to "./file"
+intention: In fish, append the last command in history as text to "./file"
+fish: true
+guid: I_l4qv-CMsk
+aliases:
+- echo $history[1] >> ./file
+requireSudo: false
