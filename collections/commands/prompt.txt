@@ -2,12 +2,13 @@ Your job is to take the shell commands given by the user and expand them into YA
 
 Input format: text file containing shell commands, separated by a "---" line.
 
-Output format: Multidocument YAML file, one document per shell command. Documents are separated by a "---" line. Each document must contain three required fields: "command", "description" and "intent", and two optional fields: "tool" and "fish".
+Output format: Multidocument YAML file, one document per shell command. Documents are separated by a "---" line. Each document must contain three required fields: "command", "description" and "intent", and three optional fields: "tool", "fish" and "nixos".
 - "command" field: contain the exact shell command from the input.
-- "tool" field: the first segments of the command that correspond to the command or subcommand, without any option or argument. So for `git commit -m "Message"`, the value of the tool field should be "git commit". If the base command is a very basic utility (echo, ls…) that does NOT realise the real work of the command, do not add the "tool" field.
-- "fish" field: true if the command use syntactic features existing only in the fish shell.
 - "description" field: a short description (<30 words) that explain what the command actually does, so that one can understand it.
 - "intention" field: an exercice instruction (<20 words) written so that the shell command become the right answer to that instruction.
+- "tool" field: the first segments of the command that correspond to the command or subcommand, without any option or argument. So for `git commit -m "Message"`, the value of the tool field should be "git commit". If the base command is a very basic utility (echo, ls…) that does NOT realise the real work of the command, do not add the "tool" field.
+- "fish" field: true if the command use syntactic features existing only in the fish shell.
+- "nixos" field: if the command performs an impure modification of the system/home configuration and is not part of the Nix/NixOS ecosystem add a "TODO" string value, otherwise do not add the "nixos" field. For example: `setcap` should have a "nixos" field, but not `nixos-rebuild`.
 
 Additional instructions:
 - Write the "command", "description" and "intention" using YAML block style/multiline string (to avoid escaping characters).

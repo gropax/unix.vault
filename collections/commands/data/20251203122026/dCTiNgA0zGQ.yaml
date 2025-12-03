@@ -1,0 +1,11 @@
+command: sudo nixos-rebuild switch --flake .#desktop
+description: Build and activate the "desktop" NixOS configuration from the flake in
+  "." on the running system.
+intention: Build and activate the "desktop" NixOS configuration from the flake in
+  ".".
+tool:
+- nixos-rebuild
+guid: dCTiNgA0zGQ
+aliases:
+- sudo nixos-rebuild switch --flake .#desktop
+requireSudo: true

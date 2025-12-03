@@ -1,0 +1,10 @@
+command: getcap $(which ping)
+description: Display Linux capabilities set on the "ping" executable resolved by "which".
+intention: Show the Linux capabilities assigned to the currently used "ping" executable.
+tool:
+- getcap
+fish: false
+guid: EoLcLzap3RE
+aliases:
+- getcap $(which ping)
+requireSudo: false

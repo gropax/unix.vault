@@ -1,0 +1,9 @@
+command: which ping
+description: Print the full path of the "ping" executable found in the current PATH.
+intention: Show the full filesystem path of the "ping" executable.
+fish: false
+guid: JC1_rJDvp10
+aliases:
+- which ping
+nixos: ''
+requireSudo: false

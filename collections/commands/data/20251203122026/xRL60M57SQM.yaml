@@ -1,0 +1,10 @@
+command: getcap $(which ping)
+description: Show POSIX capabilities set on the "ping" executable by querying its
+  resolved path.
+intention: Display the capabilities configured on the "ping" executable.
+tool:
+- getcap
+guid: xRL60M57SQM
+aliases:
+- getcap $(which ping)
+requireSudo: false

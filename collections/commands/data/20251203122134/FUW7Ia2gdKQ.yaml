@@ -1,0 +1,13 @@
+command: nix edit nixpkgs#git
+description: Open the "git" package from the "nixpkgs" flake for editing using the
+  default editor configured for nix edit.
+intention: Open the "git" package from the "nixpkgs" flake for editing.
+tool:
+- nix
+- nix edit
+fish: false
+guid: FUW7Ia2gdKQ
+aliases:
+- nix edit nixpkgs#git
+nixos: ''
+requireSudo: false

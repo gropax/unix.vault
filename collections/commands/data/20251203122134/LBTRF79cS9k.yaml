@@ -1,0 +1,13 @@
+command: sudo setcap cap_net_raw=ep $(which ping)
+description: Grant the "ping" binary the cap_net_raw capability with effective and
+  permitted flags, allowing raw network operations without root.
+intention: Set the cap_net_raw capability with effective and permitted flags on the
+  "ping" binary.
+tool:
+- setcap
+fish: false
+nixos: TODO
+guid: LBTRF79cS9k
+aliases:
+- sudo setcap cap_net_raw=ep $(which ping)
+requireSudo: true

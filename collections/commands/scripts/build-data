@@ -86,6 +86,7 @@ for doc in data:
     description = doc.get("description").strip()
     intention = doc.get("intention").strip()
     tool = doc.get("tool", "").strip()
+    nixos = doc.get("nixos", "").strip()
 
     try:
         fst = command.split(" ")[0]
@@ -106,6 +107,9 @@ for doc in data:
             " ".join(parts[:i+1])
             for i in range(len(parts))
         ]
+
+    if nixos:
+        doc["nixos"] = nixos
 
     output = yaml.safe_dump(
         doc,
