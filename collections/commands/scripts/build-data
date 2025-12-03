@@ -13,6 +13,7 @@ OPENAI_MODEL = "gpt-5.1"
 BATCH_SIZE = 10
 
 
+capture_file = Path(sys.argv[1])
 collection_path = Path(__file__).parent / ".."
 data_path = collection_path / "data"
 
@@ -40,10 +41,14 @@ except OSError as e:
     sys.exit(1)
 
 
-dump_file = collection_path / "dump"
+capture = capture_file.read_text().strip()
+if capture == "":
+    sys.stderr.write("Capture file is empty.\n")
+    sys.exit(1)
+
 commands = [
     c.strip()
-    for c in re.split("\n\n+", dump_file.read_text())
+    for c in re.split("\n\n+", capture)
 ]
 user_input = "\n---\n".join(commands)
 
@@ -115,11 +120,11 @@ for doc in data:
 
 sys.stderr.write(f"Data successfully generated in {outdir}.\n")
 
-sys.stderr.write(f"Do you want to clear dump file? [y/N] ")
+sys.stderr.write(f"Do you want to clear capture file? [y/N] ")
 resp = input().strip().lower()
 
 if resp in ("y", "yes"):
-    dump_file.write_text("")
+    capture_file.write_text("")
     sys.stderr.write("Dump file cleared")
 
 sys.stdout.write(f"{outdir}\n")

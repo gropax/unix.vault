@@ -3,6 +3,13 @@ set -euo pipefail
 
 : "${ROOT_DIR:="$(cd "$(dirname "$0")" && pwd)/.."}"
 
-if OUTDIR=$("$ROOT_DIR/collections/commands/scripts/build-data"); then
+if [ ! -f "$COMMAND_CAPTURE_FILE" ]; then
+    echo "Can't find existing file is COMMAND_CAPTURE_FILE environment variable."
+    exit 1
+fi
+
+CMD="$ROOT_DIR/collections/commands/scripts/build-data"
+
+if OUTDIR=$("$CMD" "$COMMAND_CAPTURE_FILE"); then
     printf "%s:1: Need validation\n" "$OUTDIR"/*.yaml | vi -q -
 fi
