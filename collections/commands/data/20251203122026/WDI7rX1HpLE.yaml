@@ -1,8 +1,0 @@
-command: echo $history[1] >> ./file
-description: Append the first entry of the "history" array variable to the file "./file".
-intention: Append the first element of the "history" array variable to "./file".
-fish: true
-guid: WDI7rX1HpLE
-aliases:
-- echo $history[1] >> ./file
-requireSudo: false

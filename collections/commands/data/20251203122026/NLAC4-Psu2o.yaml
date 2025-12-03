@@ -1,7 +1,0 @@
-command: which ping
-description: Print the full path of the "ping" executable found in the current PATH.
-intention: Show the full filesystem path of the "ping" executable.
-guid: NLAC4-Psu2o
-aliases:
-- which ping
-requireSudo: false

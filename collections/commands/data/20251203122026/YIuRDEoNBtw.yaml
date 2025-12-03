@@ -1,9 +1,0 @@
-command: sudo nix-collect-garbage -d
-description: Delete outdated Nix store paths and their generations, freeing disk space.
-intention: Collect and delete old Nix store paths and generations.
-tool:
-- nix-collect-garbage
-guid: YIuRDEoNBtw
-aliases:
-- sudo nix-collect-garbage -d
-requireSudo: true

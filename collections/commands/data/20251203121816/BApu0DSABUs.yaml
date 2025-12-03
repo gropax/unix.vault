@@ -1,8 +1,0 @@
-command: echo $history[1] >> ./file
-description: Append the first entry of the shell history to the "./file" file.
-intention: Append the first command from the shell history to the end of "./file".
-fish: true
-guid: BApu0DSABUs
-aliases:
-- echo $history[1] >> ./file
-requireSudo: false
