@@ -1,5 +1,0 @@
-rg "sw" ~/dev/data/cli-commands/ --vimgrep | vi -q -
-
-echo $history[1] >> ~/dev/data/cli-commands/commands/dump
-
-sudo docker container stop 28e4bcf3

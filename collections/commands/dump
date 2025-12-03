@@ -1,5 +1,18 @@
-rg "sw" ~/dev/data/cli-commands/ --vimgrep | vi -q -
+rg "abc" ./dir/ --vimgrep | vi -q -
 
-echo $history[1] >> ~/dev/data/cli-commands/commands/dump
+echo $history[1] >> ./file
 
-sudo docker container stop 28e4bcf3
+getcap $(which ping)
+
+nix edit nixpkgs#git
+
+nix flake update
+
+sudo nix-collect-garbage -d
+
+sudo nixos-rebuild switch --flake.#desktop
+
+sudo setcap cap_net_raw=ep $(which ping)
+
+which ping
+
