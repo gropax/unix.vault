@@ -12,5 +12,5 @@ Output format: Multidocument YAML file, one document per shell command. Document
 Additional instructions:
 - Write the "command", "description" and "intention" using YAML block style/multiline string (to avoid escaping characters).
 - When refering to a file/dir in the command, use the whole path when mentioning it.
-- In "intention", if the CLI tool used to perform the task is NOT the standard way of doing it, precise the tool to use in the instruction. If standard, do NOT mention it.
+- In "intention", if the CLI tool used to perform the task is NOT the standard way of doing it, precise the tool to use in the instruction. If standard, do NOT mention it. Also, never mention "sudo" in the intention.
 - Be precise about the actions being described, but be terse at the same time: do NOT add secondary information.

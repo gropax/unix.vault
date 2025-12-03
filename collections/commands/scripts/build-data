@@ -3,9 +3,12 @@
 import sys
 import os
 import re
+import base64
+from datetime import datetime
 from pathlib import Path
 from itertools import batched
 from openai import OpenAI
+import yaml
 
 OPENAI_MODEL = "gpt-5.1"
 
@@ -49,11 +52,63 @@ input = "\n---\n".join(commands)
 #sys.stderr.write(input + "\n")
 #sys.exit(0)
 
+# Expand using AI
+#
+data = []
 for batch in batched(commands, 10):
     response = client.responses.create(
         model=OPENAI_MODEL,
         instructions=prompt,
         input=input,
     )
+    #sys.stderr.write(response.output_text)
+    docs = yaml.safe_load_all(response.output_text)
+    data.extend(docs)
 
-    sys.stderr.write(response.output_text)
+
+# Deterministic field expansion
+#
+outdir = data_path / str(datetime.now().strftime("%Y%m%d%H%M%S"))
+os.makedirs(outdir)
+
+for doc in data:
+    guid = base64.urlsafe_b64encode(os.urandom(8)).rstrip(b'=').decode()
+
+    command = doc.get("command").strip()
+    description = doc.get("description").strip()
+    intention = doc.get("intention").strip()
+    tool = doc.get("tool", "").strip()
+
+    try:
+        fst = command.split(" ")[0]
+    except KeyError as e:
+        sys.stderr.write(f"Can't read first command segment in:\n {doc}\n\n{e}\n")
+        sys.exit(1)
+
+    doc["guid"] = guid
+    doc["aliases"] = [command]
+    doc["command"] = command
+    doc["description"] = description
+    doc["intention"] = intention
+    doc["requireSudo"] = fst == "sudo"
+
+    if tool:
+        parts = tool.split(" ")
+        doc["tool"] = [
+            " ".join(parts[:i+1])
+            for i in range(len(parts))
+        ]
+
+    output = yaml.safe_dump(
+        doc,
+        default_flow_style=False,
+        sort_keys=False,
+        allow_unicode=True,
+    )
+
+    file = outdir / (guid + ".yaml")
+    file.write_text(output)
+
+    #sys.stdout.write(output + "---\n")
+
+

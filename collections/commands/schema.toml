@@ -9,8 +9,10 @@ type = "String"
 [fields.intention]
 type = "String"
 
-[fields.program]
+[fields.tool]
 type = "String"
+multiplicity = "Many"
+optional = true
 
 [fields.requireSudo]
 type = "Bool"

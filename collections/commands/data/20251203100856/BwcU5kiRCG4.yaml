@@ -1,0 +1,8 @@
+command: echo $history[1] >> ~/dev/data/cli-commands/commands/dump
+fish: false
+description: Append the most recent command from the current shell history to /home/user/dev/data/cli-commands/commands/dump.
+intention: Append the last executed shell command from your history to the file /home/user/dev/data/cli-commands/commands/dump.
+guid: BwcU5kiRCG4
+aliases:
+- echo $history[1] >> ~/dev/data/cli-commands/commands/dump
+requireSudo: false

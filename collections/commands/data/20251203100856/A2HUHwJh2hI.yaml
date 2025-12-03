@@ -1,0 +1,12 @@
+command: rg "sw" ~/dev/data/cli-commands/ --vimgrep | vi -q -
+tool:
+- rg
+fish: false
+description: Search recursively for the string "sw" in /home/user/dev/data/cli-commands/
+  and open the vimgrep-formatted results in vi's quickfix list.
+intention: Recursively search for the string "sw" in /home/user/dev/data/cli-commands/
+  and open the search results as a quickfix list in vi.
+guid: A2HUHwJh2hI
+aliases:
+- rg "sw" ~/dev/data/cli-commands/ --vimgrep | vi -q -
+requireSudo: false
