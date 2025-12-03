@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import sys
 import os
 import re
@@ -11,6 +10,7 @@ from openai import OpenAI
 import yaml
 
 OPENAI_MODEL = "gpt-5.1"
+BATCH_SIZE = 10
 
 
 collection_path = Path(__file__).parent / ".."
@@ -40,28 +40,30 @@ except OSError as e:
     sys.exit(1)
 
 
-source_path = collection_path / "src"
+dump_file = collection_path / "dump"
 commands = [
-    #f"command: \"{c.strip()}\""
     c.strip()
-    for file in source_path.iterdir()
-    for c in re.split("\n\n+", file.read_text())
+    for c in re.split("\n\n+", dump_file.read_text())
 ]
-input = "\n---\n".join(commands)
+user_input = "\n---\n".join(commands)
 
-#sys.stderr.write(input + "\n")
-#sys.exit(0)
 
 # Expand using AI
 #
+command_count = len(commands)
+batch_count = command_count // BATCH_SIZE + (1 if command_count % BATCH_SIZE else 0)
+
 data = []
-for batch in batched(commands, 10):
+i = 1
+for batch in batched(commands, BATCH_SIZE):
+    sys.stderr.write(f"Sending AI query [{i}/{batch_count}].\n")
+    i += 1
+
     response = client.responses.create(
         model=OPENAI_MODEL,
         instructions=prompt,
-        input=input,
+        input=user_input,
     )
-    #sys.stderr.write(response.output_text)
     docs = yaml.safe_load_all(response.output_text)
     data.extend(docs)
 
@@ -70,6 +72,7 @@ for batch in batched(commands, 10):
 #
 outdir = data_path / str(datetime.now().strftime("%Y%m%d%H%M%S"))
 os.makedirs(outdir)
+outdir = outdir.resolve()
 
 for doc in data:
     guid = base64.urlsafe_b64encode(os.urandom(8)).rstrip(b'=').decode()
@@ -109,6 +112,10 @@ for doc in data:
     file = outdir / (guid + ".yaml")
     file.write_text(output)
 
-    #sys.stdout.write(output + "---\n")
 
+sys.stderr.write(f"Data successfully generated in {outdir}.\n")
 
+resp = input("Do you want to clear dump file? [y/N] ").strip().lower()
+if resp in ("y", "yes"):
+    dump_file.write_text("")
+    sys.stderr.write("Dump file cleared")
