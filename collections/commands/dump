@@ -10,7 +10,7 @@ nix flake update
 
 sudo nix-collect-garbage -d
 
-sudo nixos-rebuild switch --flake.#desktop
+sudo nixos-rebuild switch --flake .#desktop
 
 sudo setcap cap_net_raw=ep $(which ping)
 
