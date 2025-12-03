@@ -11,7 +11,7 @@ Output format: Multidocument YAML file, one document per shell command. Document
 
 Additional instructions:
 - Write the "command", "description" and "intention" using YAML block style/multiline string (to avoid escaping characters).
-- When refering to a file/dir in the command, use the whole path when mentioning it.
+- If you find paths in a command, do not presume anything about the pwd, and refer to it without change or interpretation.
 - In "intention", if the CLI tool used to perform the task is NOT the standard way of doing it, precise the tool to use in the instruction. If standard, do NOT mention it. Also, never mention "sudo" in the intention. In "intention", only tell what is necessary for student to write the command, but do NOT talk about why we want to execute it.
 - Be precise about the actions being described, but be terse at the same time: do NOT add secondary information.
-- In description and intention, I you write a user symbol from the command, put it in quote to distinguish it form regular english use of the word.
+- In description and intention, I you write a user symbol from the command, put it in quote to distinguish it form regular english use of the word, except for env vars that should remain unquoted.

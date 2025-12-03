@@ -1,4 +1,0 @@
-command: "which ping"
-description: "Print the location of the `ping` executable."
-topics:
-- File system

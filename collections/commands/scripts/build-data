@@ -115,7 +115,11 @@ for doc in data:
 
 sys.stderr.write(f"Data successfully generated in {outdir}.\n")
 
-resp = input("Do you want to clear dump file? [y/N] ").strip().lower()
+sys.stderr.write(f"Do you want to clear dump file? [y/N] ")
+resp = input().strip().lower()
+
 if resp in ("y", "yes"):
     dump_file.write_text("")
     sys.stderr.write("Dump file cleared")
+
+sys.stdout.write(f"{outdir}\n")

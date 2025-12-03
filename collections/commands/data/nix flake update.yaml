@@ -1,2 +1,0 @@
-command: "nix flake update"
-description: "Update the pinned nixpkgs (and other inputs) in flake.lock."
