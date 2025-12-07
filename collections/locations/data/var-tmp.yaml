@@ -1,0 +1,6 @@
+path: /var/tmp
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: Temporary files to be preserved between reboots.
+adhoc: |

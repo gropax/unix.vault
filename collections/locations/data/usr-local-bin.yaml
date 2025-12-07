@@ -1,0 +1,6 @@
+path: /usr/local/bin
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Contains locally installed, admin-managed executables.
+adhoc: |

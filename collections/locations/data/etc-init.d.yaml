@@ -1,0 +1,5 @@
+path: /etc/init.d
+type: directory
+partOf: Filesystem Hierarchy Standard
+description: Contains the scripts that start various system services at boot time.
+adhoc: |

@@ -1,0 +1,6 @@
+path: /media
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: Monut points for removable media such as CD-ROMs.
+adhoc: |

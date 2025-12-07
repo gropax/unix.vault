@@ -1,0 +1,5 @@
+path: /opt
+type: directory
+partOf: Filesystem Hierarchy Standard
+description: Add-on application software packages.
+adhoc: |

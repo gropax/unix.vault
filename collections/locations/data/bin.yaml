@@ -1,4 +1,7 @@
 path: /bin
 type: directory
-partOf: NixOS
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
 description: "Essential user executables needed early at boot (on non-NixOS systems). On NixOS, minimal: mostly compatibility links."
+adhoc: |
+  - In NixOS, only contains a `sh` simlink to some `bash` in the Nix store.

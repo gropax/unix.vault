@@ -1,4 +1,5 @@
 path: /run
 type: directory
-partOf: "NixOS"
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
 description: Top-level volatile runtime directory recreated on boot (tmpfs).

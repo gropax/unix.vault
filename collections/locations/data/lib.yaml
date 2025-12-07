@@ -1,0 +1,6 @@
+path: /lib
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Libraries essential for the binaries in `/bin` and `/sbin`.
+adhoc: |

@@ -1,0 +1,6 @@
+path: /var/log
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: Log files.
+adhoc: |

@@ -1,0 +1,6 @@
+path: /var/cache
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: Application cache data.
+adhoc: |

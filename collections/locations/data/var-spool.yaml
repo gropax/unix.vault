@@ -1,0 +1,7 @@
+path: /var/spool
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: |
+  [[Spool]] for tasks waiting to be processed.
+adhoc: |

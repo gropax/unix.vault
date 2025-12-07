@@ -1,0 +1,6 @@
+path: /var/run
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: Runtime variable data (deprecated in favor of [[location/run|/run]]).
+adhoc: |

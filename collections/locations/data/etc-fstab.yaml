@@ -1,0 +1,5 @@
+path: /etc/fstab
+type: file
+partOf: NixOS
+description: Contains a table of devices that get mounted when the system boots.
+adhoc: |

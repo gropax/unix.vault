@@ -1,0 +1,5 @@
+path: /etc/xml
+type: directory
+partOf: Filesystem Hierarchy Standard
+description: Configruation files for software that processes XML.
+adhoc: |

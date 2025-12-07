@@ -1,4 +1,7 @@
 path: /home
 type: directory
-partOf: NixOS
-description: "Home directories for regular users."
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: Home directories for regular users.
+adhoc: |
+  - In general, the only place where users are allowed to write files.

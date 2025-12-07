@@ -1,0 +1,6 @@
+path: /usr/local
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Tertiary hierarchy for local data, specific to this host.
+adhoc: |

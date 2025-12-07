@@ -1,4 +1,5 @@
 path: /lib64
 type: directory
-partOf: NixOS
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
 description: "64-bit system libraries required by early-boot binaries. Minimal on NixOS."

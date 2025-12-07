@@ -1,4 +1,5 @@
 path: /lost+found
 type: directory
 partOf: NixOS
+usedInNixOS: true
 description: "Recovered filesystem fragments after disk errors (EXT filesystems)."

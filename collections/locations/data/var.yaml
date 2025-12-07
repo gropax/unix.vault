@@ -1,4 +1,5 @@
 path: /var
 type: directory
-partOf: NixOS
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
 description: "Variable state: logs, caches, databases, spool. Persistent across reboots."

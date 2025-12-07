@@ -1,0 +1,6 @@
+path: /etc/passwd
+type: file
+partOf: NixOS
+description: Contains the essential information for each user.
+adhoc: |
+  - This is where user accounts are defined

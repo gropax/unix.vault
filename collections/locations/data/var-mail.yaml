@@ -1,0 +1,6 @@
+path: /var/mail
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Mailbox files.
+adhoc: |

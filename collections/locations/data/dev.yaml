@@ -1,4 +1,7 @@
 path: /dev
 type: directory
-partOf: NixOS
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
 description: "Device files managed by the kernel and udev (terminals, disks, sockets)."
+adhoc: |
+  - Stands for _devices_

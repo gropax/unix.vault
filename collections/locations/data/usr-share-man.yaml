@@ -1,0 +1,6 @@
+path: /usr/share/man
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Contains the `man` pages.
+adhoc: |

@@ -1,0 +1,5 @@
+path: /etc/sgml
+type: directory
+partOf: Filesystem Hierarchy Standard
+description: Configuration files, such as catalogs, for software that processes SGML.
+adhoc: |

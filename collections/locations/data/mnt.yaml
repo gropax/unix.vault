@@ -1,0 +1,5 @@
+path: /mnt
+type: directory
+partOf: Filesystem Hierarchy Standard
+description: Temporarily mounted filesystems.
+adhoc: |

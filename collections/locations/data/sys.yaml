@@ -1,4 +1,5 @@
 path: /sys
 type: directory
-partOf: NixOS
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
 description: "Virtual sysfs: hardware topology, kernel devices, module parameters."

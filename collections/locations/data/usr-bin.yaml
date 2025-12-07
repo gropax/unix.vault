@@ -1,0 +1,7 @@
+path: /usr/bin
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: Non-essential command binaries (not needed in single-user mode); for all users.
+adhoc: |
+  - In NixOS, only contains a simlink to the [[env]] command in the Nix store.

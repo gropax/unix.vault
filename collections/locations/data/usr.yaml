@@ -1,4 +1,7 @@
 path: /usr
 type: directory
-partOf: NixOS
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
 description: "Userland programs and libs on traditional Linux. On NixOS: kept minimal for FHS compliance only."
+adhoc: |
+  - On NixOS, only contains [[locations/usr-bin|/usr/bin]].

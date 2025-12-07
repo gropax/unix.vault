@@ -1,0 +1,6 @@
+path: /var/lib
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: State information. Persistent data modified by programs as they run.
+adhoc: |

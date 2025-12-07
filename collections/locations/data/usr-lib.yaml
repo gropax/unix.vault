@@ -1,0 +1,6 @@
+path: /usr/lib
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Libraries for the binaries in [[locations/usr-bin|/usr/bin]] and [[locations/usr-sbin|/usr/sbin]].
+adhoc: |

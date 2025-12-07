@@ -1,0 +1,5 @@
+path: /sbin
+type: directory
+partOf: Filesystem Hierarchy Standard
+description: Essential system binaries
+adhoc: |

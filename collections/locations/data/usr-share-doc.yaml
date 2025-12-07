@@ -1,0 +1,6 @@
+path: /usr/share/doc
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Various documentation files in a variety of formats.
+adhoc: |

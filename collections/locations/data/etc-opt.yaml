@@ -1,0 +1,5 @@
+path: /etc/opt
+type: directory
+partOf: Filesystem Hierarchy Standard
+description: Configuration files for add-on packages stored in `/opt`
+adhoc: |

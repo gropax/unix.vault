@@ -8,6 +8,11 @@ if [ ! -f "$COMMAND_CAPTURE_FILE" ]; then
     exit 1
 fi
 
+if ! vi "$COMMAND_CAPTURE_FILE"; then
+    echo "Build aborted."
+    exit 1
+fi
+
 CMD="$ROOT_DIR/collections/commands/scripts/build-data"
 
 if OUTDIR=$("$CMD" "$COMMAND_CAPTURE_FILE"); then

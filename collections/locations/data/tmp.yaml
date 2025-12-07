@@ -1,4 +1,5 @@
 path: /tmp
 type: directory
-partOf: NixOS
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
 description: "Temporary files, cleared at reboot. World-writable."

@@ -1,0 +1,5 @@
+path: /etc/hosts
+type: file
+partOf: Filesystem Hierarchy Standard
+description: Contains the list of network host names and IP addresses that are intrinsically known to the system.
+adhoc: |

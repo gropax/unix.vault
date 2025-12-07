@@ -1,0 +1,6 @@
+path: /var/lock
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: true
+description: Lock files. Files keeping track of resources currently in use.
+adhoc: |

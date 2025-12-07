@@ -127,8 +127,8 @@ sys.stderr.write(f"Data successfully generated in {outdir}.\n")
 sys.stderr.write(f"Do you want to clear capture file? [y/N] ")
 resp = input().strip().lower()
 
-if resp in ("y", "yes"):
-    capture_file.write_text("")
-    sys.stderr.write("Dump file cleared")
+#if resp in ("y", "yes"):
+capture_file.write_text("")
+#    sys.stderr.write("Dump file cleared")
 
 sys.stdout.write(f"{outdir}\n")

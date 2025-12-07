@@ -1,0 +1,6 @@
+path: /usr/share
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Architecture-independent (shared) data.
+adhoc: |

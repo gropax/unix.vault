@@ -1,0 +1,6 @@
+path: /usr/src
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Source code (e.g. the kernel source code with its header files).
+adhoc: |

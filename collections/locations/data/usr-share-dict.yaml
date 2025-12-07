@@ -1,0 +1,6 @@
+path: /usr/share/dict
+type: directory
+partOf: Filesystem Hierarchy Standard
+usedInNixOS: false
+description: Contains the dictionaries for the spelling checker.
+adhoc: |
